@@ -1,8 +1,9 @@
 # Portfolio
 
-This project was built with React and Chakra UI
+This project was built with React and Chakra UI.
+It is a portfolio of my work so far.
 
-## ...
+## Actions
 
 In the project directory, you can run:
 
