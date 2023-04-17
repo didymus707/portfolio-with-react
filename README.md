@@ -1,6 +1,6 @@
 # Portfolio
 
-This project was built with React and Tailwind CSS
+This project was built with React and Chakra UI
 
 ## ...
 
