@@ -1,18 +1,14 @@
 import React from "react";
-import { Container } from "@chakra-ui/react";
-import { ChakraProvider, Box, theme } from "@chakra-ui/react";
-import { Header } from "./components/header";
+import { ChakraProvider, theme } from "@chakra-ui/react";
+import { Route, Routes } from "react-router-dom";
+import Page from "./page";
 
-export const App = () => (
+const App = () => (
   <ChakraProvider theme={theme}>
-    <Box bg="#27282B">
-      <Container maxW='1200px'>
-        <Box>
-          <Header />
-        </Box>
-        <Box>{/* Body */}</Box>
-        <Box>{/* Footer */}</Box>
-      </Container>
-    </Box>
+    <Routes>
+      <Route path="/" element={<Page />} />
+    </Routes>
   </ChakraProvider>
 );
+
+export default App;
