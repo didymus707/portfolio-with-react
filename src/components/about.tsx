@@ -1,7 +1,8 @@
 import { Box, Divider, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaReact } from "react-icons/fa";
-import Icons, { NodeJS, Ruby, TypeScript } from "./custom/icons";
+import { DiRubyRough } from "react-icons/di";
+import Icons, { NodeJS, TypeScript, RubyOnRails, Ruby } from "./custom/icons";
 
 const About = () => {
   return (
@@ -31,14 +32,14 @@ const About = () => {
             <Text fontSize="3xl" textAlign="center">
               My Skills
             </Text>
-            <Flex wrap="wrap" justify="space-evenly" rowGap="20px">
+            <Flex wrap="wrap" justify="space-evenly" gap="30px">
               <Icons icon={FaReact} color="#00D8FF" iconName="React" />
               <Icons icon={FaReact} iconName="Git" />
               <Icons icon={NodeJS} iconName="NodeJs" />
               <Icons icon={TypeScript} iconName="TypeScript" />
               <Icons icon={FaReact} iconName="React" />
-              <Icons icon={Ruby} iconName="Ruby" />
-              <Icons icon={FaReact} iconName="Ruby on Rails" />
+              <Icons icon={DiRubyRough} iconName="Ruby" color="red" />
+              <Icons icon={Ruby} iconName="Ruby on Rails" color='white' />
             </Flex>
           </Box>
         </Stack>
