@@ -1,7 +1,6 @@
 import { Box, Divider, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaReact } from "react-icons/fa";
-import { DiRubyRough } from "react-icons/di";
 import CustomIcons, {
   Css,
   Git,
