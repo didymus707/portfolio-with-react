@@ -2,7 +2,15 @@ import { Box, Divider, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { DiRubyRough } from "react-icons/di";
-import Icons, { NodeJS, TypeScript, RubyOnRails, Ruby } from "./custom/icons";
+import CustomIcons, {
+  Css,
+  Git,
+  Html,
+  Ruby,
+  NodeJS,
+  TypeScript,
+  RubyOnRails,
+} from "./custom/icons";
 
 const About = () => {
   return (
@@ -33,13 +41,23 @@ const About = () => {
               My Skills
             </Text>
             <Flex wrap="wrap" justify="space-evenly" gap="30px">
-              <Icons icon={FaReact} color="#00D8FF" iconName="React" />
-              <Icons icon={FaReact} iconName="Git" />
-              <Icons icon={NodeJS} iconName="NodeJs" />
-              <Icons icon={TypeScript} iconName="TypeScript" />
-              <Icons icon={FaReact} iconName="React" />
-              <Icons icon={DiRubyRough} iconName="Ruby" color="red" />
-              <Icons icon={Ruby} iconName="Ruby on Rails" color='white' />
+              <CustomIcons icon={FaReact} color="#00D8FF" iconName="React" />
+              <CustomIcons icon={Git} iconName="Git" />
+              <CustomIcons icon={NodeJS} iconName="NodeJs" boxSize={24} />
+              <CustomIcons
+                icon={TypeScript}
+                iconName="TypeScript"
+                boxSize={12}
+              />
+
+              <CustomIcons icon={Ruby} iconName="Ruby" />
+              <CustomIcons
+                icon={RubyOnRails}
+                iconName="Ruby on Rails"
+                boxSize={24}
+              />
+              <CustomIcons icon={Html} iconName="HTML" />
+              <CustomIcons icon={Css} iconName="CSS" />
             </Flex>
           </Box>
         </Stack>
