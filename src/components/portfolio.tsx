@@ -12,18 +12,28 @@ import { SmallSubtitle, BodyText, Heading2 } from "./custom/icons";
 
 const Portfolio = () => {
   return (
-    <Box style={{ marginTop: "3rem" }}>
+    <Box style={{ marginTop: "3rem", marginBottom: "6rem" }}>
       <Heading2 color="white" textAlign="center">
         Portfolio
       </Heading2>
-      <Flex wrap="wrap" style={{ marginTop: "3rem" }} columnGap='0.5rem' justify='space-between'>
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
-      </Flex>
+      <VStack>
+        <Flex
+          wrap="wrap"
+          columnGap="0.5rem"
+          justify="space-between"
+          style={{ marginTop: "3rem" }}
+        >
+          <ProjectBox />
+          <ProjectBox />
+          <ProjectBox />
+          <ProjectBox />
+          <ProjectBox />
+          <ProjectBox />
+        </Flex>
+        <Button bgGradient="linear(to-r, slateblue, coral)" color="white">
+          View More
+        </Button>
+      </VStack>
     </Box>
   );
 };
@@ -57,10 +67,20 @@ const ProjectBox = (props: BoxProps) => (
         </BodyText>
       </Box>
       <Flex width="100%" style={{ marginTop: "auto" }} justify="space-between">
-        <Button rounded="3xl" fontSize="0.75rem">
+        <Button
+          color="white"
+          rounded="3xl"
+          fontSize="0.75rem"
+          bgGradient="linear(to-r, slateblue, coral)"
+        >
           Live Preview
         </Button>
-        <Button rounded="3xl" fontSize="0.75rem">
+        <Button
+          color="white"
+          rounded="3xl"
+          fontSize="0.75rem"
+          bgGradient="linear(to-r, slateblue, coral)"
+        >
           Check on Github
         </Button>
       </Flex>

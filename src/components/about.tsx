@@ -1,13 +1,4 @@
-import {
-  Box,
-  Divider,
-  Flex,
-  Heading,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
-import React from "react";
+import { Box, Divider, Flex, Stack, Text } from "@chakra-ui/react";
 import { FaReact } from "react-icons/fa";
 import CustomIcons, {
   Css,
@@ -23,27 +14,40 @@ import CustomIcons, {
 
 const About = () => {
   return (
-    <Stack direction="column" className="about-classs" color="white">
+    <Stack color="white" direction="column" className="about-classs">
       <Box mt="1rem">
         <Heading2 color="white">About</Heading2>
         <Stack>
           <Flex align="baseline" my="2.5rem">
             <Divider
-              size="4rem"
               width="5rem"
               variant="solid"
-              border="4px solid tan"
+              // background="linear(to-r, green.200, cyan.500)"
+              background="linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, slateblue, coral) border-box"
+              border="4px solid transparent"
+              borderRadius="3xl"
             />
             <Box>
               <Text color="whiteAlpha.800" ml="1rem">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                reiciendis voluptate veniam ab tenetur libero beatae esse ex
-                adipisci optio vitae quibusdam fugiat recusandae vero ipsam,
-                quia architecto. Dolore, possimus?
+                Hi, I am Adewale, finding patterns in problems and providing
+                solutions to them are the highlight of my day. I had a
+                background in biochemistry and part of the skill I took from
+                there is knowing the root cause of a problem and finding a
+                solution to it. This skill has helped me in particular since I
+                started programming as I must design and build an application or
+                website that is fail-safe. <br />
+                I am skilled in technical skills such as HTML & CSS, JavaScript,
+                Ruby on Rails, React & Redux and soft skills such as
+                communication, team collaboration, pair programming, remote
+                working. I can work as a front end, back end or in the full
+                stack position and I am open to learning also. <br /> In my free
+                time, I play video games or play the guitar. I am open to new
+                opportunities and challenges.
               </Text>
             </Box>
           </Flex>
-          <Box>
+
+          <Box className="skills" style={{ margin: "4rem 0" }}>
             <Heading2 textAlign="center">My Skills</Heading2>
             <Flex
               gap="30px"
@@ -53,11 +57,7 @@ const About = () => {
             >
               <Flex justify="center">
                 <CustomIcons icon={FaReact} color="#00D8FF" iconName="React" />
-                <CustomIcons
-                  icon={Git}
-                  iconName="Git"
-                  leftMargin="1rem"
-                />
+                <CustomIcons icon={Git} iconName="Git" leftMargin="1rem" />
                 <CustomIcons
                   boxSize={24}
                   icon={NodeJS}
@@ -88,7 +88,6 @@ const About = () => {
           </Box>
         </Stack>
       </Box>
-      <Box></Box>
     </Stack>
   );
 };
