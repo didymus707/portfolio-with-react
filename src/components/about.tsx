@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Stack, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Stack } from "@chakra-ui/react";
 import { FaReact } from "react-icons/fa";
 import CustomIcons, {
   Css,
@@ -10,6 +10,7 @@ import CustomIcons, {
   RubyOnRails,
   Heading2,
   Javascript,
+  BodyText,
 } from "./custom/icons";
 
 const About = () => {
@@ -28,7 +29,8 @@ const About = () => {
               borderRadius="3xl"
             />
             <Box>
-              <Text color="whiteAlpha.800" ml="1rem">
+              <BodyText color="whiteAlpha.800" fontSize='xl
+              ' ml="1rem">
                 Hi, I am Adewale, finding patterns in problems and providing
                 solutions to them are the highlight of my day. I had a
                 background in biochemistry and part of the skill I took from
@@ -36,14 +38,14 @@ const About = () => {
                 solution to it. This skill has helped me in particular since I
                 started programming as I must design and build an application or
                 website that is fail-safe. <br />
-                I am skilled in technical skills such as HTML & CSS, JavaScript,
+                I am skilled in HTML & CSS, JavaScript,
                 Ruby on Rails, React & Redux and soft skills such as
                 communication, team collaboration, pair programming, remote
                 working. I can work as a front end, back end or in the full
                 stack position and I am open to learning also. <br /> In my free
                 time, I play video games or play the guitar. I am open to new
                 opportunities and challenges.
-              </Text>
+              </BodyText>
             </Box>
           </Flex>
 

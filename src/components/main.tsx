@@ -1,7 +1,8 @@
-import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Stack } from "@chakra-ui/react";
 import About from "./about";
 import Portfolio from "./portfolio";
 import { BodyText, Subtitle } from "./custom/icons";
+import Experience from "./experience";
 
 const Main = () => {
   return (
@@ -43,8 +44,9 @@ const Main = () => {
           />
         </Box>
       </Flex>
-      <About />
       <Portfolio />
+      <About />
+      <Experience />
     </Stack>
   );
 };

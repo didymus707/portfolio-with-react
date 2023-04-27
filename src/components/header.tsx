@@ -30,9 +30,9 @@ export const Header = () => {
               <span>Adewale</span> <br /> <span>Orotayo</span>
             </SmallSubtitle>
           </Flex>
-          <Flex className="others" width="42%" justify="space-evenly">
-            <Link to="/about">About</Link>
+          <Flex className="others" width="42%" justify="space-evenly" ml="auto">
             <Link to="/projects">Projects</Link>
+            <Link to="/about">About</Link>
             <Link to="/experience">Experience</Link>
           </Flex>
           <Box
