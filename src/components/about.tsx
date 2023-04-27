@@ -1,4 +1,12 @@
-import { Box, Divider, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import CustomIcons, {
@@ -9,15 +17,15 @@ import CustomIcons, {
   NodeJS,
   TypeScript,
   RubyOnRails,
+  Heading2,
+  Javascript,
 } from "./custom/icons";
 
 const About = () => {
   return (
-    <Stack direction="column" className="about-classs" color="whiteAlpha.500">
+    <Stack direction="column" className="about-classs" color="white">
       <Box mt="1rem">
-        <Heading as="h1" size="4xl">
-          About
-        </Heading>
+        <Heading2 color="white">About</Heading2>
         <Stack>
           <Flex align="baseline" my="2.5rem">
             <Divider
@@ -36,27 +44,46 @@ const About = () => {
             </Box>
           </Flex>
           <Box>
-            <Text fontSize="3xl" textAlign="center">
-              My Skills
-            </Text>
-            <Flex wrap="wrap" justify="space-evenly" gap="30px">
-              <CustomIcons icon={FaReact} color="#00D8FF" iconName="React" />
-              <CustomIcons icon={Git} iconName="Git" />
-              <CustomIcons icon={NodeJS} iconName="NodeJs" boxSize={24} />
-              <CustomIcons
-                icon={TypeScript}
-                iconName="TypeScript"
-                boxSize={12}
-              />
+            <Heading2 textAlign="center">My Skills</Heading2>
+            <Flex
+              gap="30px"
+              width="100%"
+              mt="3rem !important"
+              flexDirection="column"
+            >
+              <Flex justify="center">
+                <CustomIcons icon={FaReact} color="#00D8FF" iconName="React" />
+                <CustomIcons
+                  icon={Git}
+                  iconName="Git"
+                  leftMargin="1rem"
+                />
+                <CustomIcons
+                  boxSize={24}
+                  icon={NodeJS}
+                  iconName="NodeJs"
+                  margin="1rem"
+                />
+                <CustomIcons
+                  boxSize={12}
+                  icon={TypeScript}
+                  iconName="TypeScript"
+                />
+              </Flex>
+              <Flex justify="center">
+                <CustomIcons icon={Javascript} iconName="Javascript" />
+                <CustomIcons icon={Ruby} iconName="Ruby" margin="1rem" />
+                <CustomIcons
+                  icon={RubyOnRails}
+                  iconName="Ruby on Rails"
+                  boxSize={24}
+                />
+              </Flex>
 
-              <CustomIcons icon={Ruby} iconName="Ruby" />
-              <CustomIcons
-                icon={RubyOnRails}
-                iconName="Ruby on Rails"
-                boxSize={24}
-              />
-              <CustomIcons icon={Html} iconName="HTML" />
-              <CustomIcons icon={Css} iconName="CSS" />
+              <Flex justify="center" rowGap="16px">
+                <CustomIcons icon={Html} iconName="HTML" rightMargin="8px" />
+                <CustomIcons icon={Css} iconName="CSS" leftMargin="8px" />
+              </Flex>
             </Flex>
           </Box>
         </Stack>

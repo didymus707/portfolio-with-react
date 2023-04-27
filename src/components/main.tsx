@@ -1,6 +1,7 @@
 import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import About from "./about";
+import Portfolio from "./portfolio";
 
 const Main = () => {
   return (
@@ -23,6 +24,7 @@ const Main = () => {
         </Box>
       </Flex>
       <About />
+      <Portfolio />
     </Stack>
   );
 };
