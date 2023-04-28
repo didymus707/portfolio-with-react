@@ -2,43 +2,46 @@ import {
   Box,
   BoxProps,
   Button,
+  Container,
   Flex,
   Image,
   Stack,
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
-import { SmallSubtitle, BodyText, Heading2 } from "./custom/icons";
+import { SmallSubtitle, BodyText, Heading2 } from "../custom/icons";
 
-const Portfolio = () => {
+export const Portfolio = () => {
   return (
-    <Box style={{ marginTop: "3rem", marginBottom: "6rem" }}>
-      <Heading2 color="white" textAlign="center">
-        Portfolio
-      </Heading2>
-      <VStack>
-        <Flex
-          wrap="wrap"
-          columnGap="0.5rem"
-          justify="space-between"
-          style={{ marginTop: "3rem" }}
-        >
-          <ProjectBox />
-          <ProjectBox />
-          <ProjectBox />
-          <ProjectBox />
-          <ProjectBox />
-          <ProjectBox />
-        </Flex>
-        <Button bgGradient="linear(to-r, slateblue, coral)" color="white">
-          View More
-        </Button>
-      </VStack>
+    <Box
+      style={{ paddingTop: "6rem", paddingBottom: "6rem", background: "#2a2a29" }}
+    >
+      <Container maxW="1000">
+        <Heading2 color="white" textAlign="center">
+          Portfolio
+        </Heading2>
+        <VStack>
+          <Flex
+            wrap="wrap"
+            columnGap="0.5rem"
+            justify="space-between"
+            style={{ marginTop: "3rem" }}
+          >
+            <ProjectBox />
+            <ProjectBox />
+            <ProjectBox />
+            <ProjectBox />
+            <ProjectBox />
+            <ProjectBox />
+          </Flex>
+          <Button bgGradient="linear(to-r, slateblue, coral)" color="white">
+            View More
+          </Button>
+        </VStack>
+      </Container>
     </Box>
   );
 };
-
-export default Portfolio;
 
 const ProjectBox = (props: BoxProps) => (
   <Stack
@@ -87,3 +90,9 @@ const ProjectBox = (props: BoxProps) => (
     </VStack>
   </Stack>
 );
+
+// home
+// ##060605
+// #20201b
+// #2a2a29 fc
+// #474746
