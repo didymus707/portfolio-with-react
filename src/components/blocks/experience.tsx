@@ -2,11 +2,13 @@ import { Box, Container, Divider, Flex, Stack } from "@chakra-ui/react";
 import { BodyText, Heading2, Subtitle } from "../custom/icons";
 
 export const Experience = () => (
-  <Box>
+  <Box bg="#353533">
     <Container maxW="1000px">
-      <Heading2 color="white">Experience</Heading2>
-      <Stack style={{ marginTop: "2.5rem", marginLeft: "1rem" }}>
-        <Flex align="baseline" style={{ marginBottom: "1rem" }}>
+      <Heading2 color="white" py="2rem">
+        Experience
+      </Heading2>
+      <Stack style={{ marginTop: "1.5rem", marginLeft: "1rem" }}>
+        <Flex align="baseline" style={{ marginBottom: "2rem" }}>
           <Divider
             width="2rem"
             variant="solid"
@@ -21,7 +23,7 @@ export const Experience = () => (
             May 2021 - March 2023
           </BodyText>
         </Flex>
-        <Flex align="baseline" style={{ marginBottom: "1rem" }}>
+        <Flex align="baseline" style={{ marginBottom: "2rem" }}>
           <Divider
             width="2rem"
             variant="solid"
@@ -36,7 +38,7 @@ export const Experience = () => (
             October 2019 - May 2021
           </BodyText>
         </Flex>
-        <Flex align="baseline" style={{ marginBottom: "1rem" }}>
+        <Flex align="baseline" style={{ marginBottom: "2rem" }}>
           <Divider
             width="2rem"
             variant="solid"

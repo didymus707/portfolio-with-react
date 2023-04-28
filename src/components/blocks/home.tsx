@@ -3,10 +3,16 @@ import React from "react";
 import { BodyText, Subtitle } from "../custom/icons";
 
 export const Home = () => (
-  <Box style={{ boxShadow: "-23px 28px 18px -31px #000000" }}>
+  <Box style={{ boxShadow: "-23px 28px 18px -39px #000000" }}>
     <Container maxW="1000px">
-      <Flex color="whiteAlpha.800" align="center" width="100%" mb="6rem">
-        <Box width="43%">
+      <Flex
+        color="whiteAlpha.800"
+        align="center"
+        width="100%"
+        mb="6rem"
+        justify="center"
+      >
+        <Box width="45%">
           <Subtitle fontSize="4xl">
             I'm{" "}
             <Box
@@ -22,7 +28,7 @@ export const Home = () => (
         </Box>
         <Box
           ml="2rem"
-          width="53%"
+          width="24%"
           style={{
             backgroundImage: `url("https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg")`,
           }}
@@ -31,8 +37,9 @@ export const Home = () => (
             width="100%"
             boxSize="250px"
             objectFit="cover"
-            // src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"
-            src="https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg"
+            objectPosition="bottom"
+            src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"
+            // src="https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg"
             alt="Adewale Orotayo"
           />
         </Box>
