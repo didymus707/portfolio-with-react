@@ -14,7 +14,11 @@ import { SmallSubtitle, BodyText, Heading2 } from "../custom/icons";
 export const Portfolio = () => {
   return (
     <Box
-      style={{ paddingTop: "6rem", paddingBottom: "6rem", background: "#2a2a29" }}
+      style={{
+        paddingTop: "6rem",
+        paddingBottom: "6rem",
+        background: "#2a2a29",
+      }}
     >
       <Container maxW="1000">
         <Heading2 color="white" textAlign="center">
@@ -47,7 +51,7 @@ const ProjectBox = (props: BoxProps) => (
   <Stack
     p="2rem"
     mb="1rem"
-    width="32%"
+    width={["100%", "100%", "45%", "32%"]}
     rounded="2xl"
     height="405px"
     border="1px solid white"

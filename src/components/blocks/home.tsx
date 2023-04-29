@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Image } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import { BodyText, Subtitle } from "../custom/icons";
 
@@ -25,6 +25,22 @@ export const Home = () => (
             ,
           </Subtitle>
           <BodyText fontSize="2xl">Full Stack developer</BodyText>
+          <Button
+            marginTop="1.5rem"
+            variant='outline'
+            // bgGradient="linear(to-r, slateblue, coral)"
+          >
+            Contact Me
+          </Button>
+          {/* <Button
+            marginTop="1.5rem"
+            background="linear-gradient(#282929 0 0) padding-box, linear-gradient(45deg, slateblue, coral) border-box"
+            padding="10px"
+            border="2px solid transparent"
+            border-radius="15px"
+          >
+            Contact Me
+          </Button> */}
         </Box>
         <Box
           ml="2rem"
@@ -35,7 +51,7 @@ export const Home = () => (
         >
           <Image
             width="100%"
-            boxSize="250px"
+            boxSize="550px"
             objectFit="cover"
             objectPosition="bottom"
             src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"

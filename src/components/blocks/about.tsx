@@ -20,23 +20,17 @@ export const About = () => {
         <Stack color="white" direction="column" className="about-classs">
           <Box mt="1rem">
             <Heading2 color="white">About</Heading2>
-            <Stack>
+            <Stack ml='1rem'>
               <Flex align="baseline" my="2.5rem">
                 <Divider
                   width="5rem"
                   variant="solid"
-                  // background="linear(to-r, green.200, cyan.500)"
                   background="linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, slateblue, coral) border-box"
                   border="4px solid transparent"
                   borderRadius="3xl"
                 />
-                <Box>
-                  <BodyText
-                    color="whiteAlpha.800"
-                    fontSize="xl
-              "
-                    ml="1rem"
-                  >
+                <Box ml="1rem">
+                  <BodyText color="whiteAlpha.800" fontSize="xl">
                     Hi, I am Adewale, finding patterns in problems and providing
                     solutions to them are the highlight of my day. I had a
                     background in biochemistry and part of the skill I took from

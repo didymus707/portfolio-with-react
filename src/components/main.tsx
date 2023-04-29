@@ -1,5 +1,6 @@
 import { Stack } from "@chakra-ui/react";
 import { Home, About, Portfolio, Experience } from "./blocks";
+import { Contact } from "./blocks/contact";
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
       <Portfolio />
       <About />
       <Experience />
+      <Contact />
     </Stack>
   );
 };
