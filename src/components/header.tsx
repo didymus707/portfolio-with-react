@@ -10,12 +10,13 @@ export const Header = () => {
         <nav>
           <Flex
             py="1rem"
+            wrap="wrap"
+            width="100%"
             color="white"
             align="center"
-            width="100%"
             justify="space-between"
           >
-            <Flex className="logo" align="center" width="22%">
+            <Flex className="logo" align="center" width={["40%", "22%"]}>
               <Avatar
                 bgGradient="linear(to-r, slateblue, coral)"
                 name="Adewale Orotayo"
@@ -32,19 +33,22 @@ export const Header = () => {
               </SmallSubtitle>
             </Flex>
             <Flex
-              className="others"
-              width="42%"
-              justify="space-evenly"
               ml="auto"
+              mt={[4, 0]}
+              order={[3, 1]}
+              className="others"
+              justify="space-evenly"
+              width={['100%', "42%"]}
             >
               <Link to="/projects">Projects</Link>
               <Link to="/about">About</Link>
               <Link to="/experience">Experience</Link>
             </Flex>
             <Box
-              width="22%"
               display="flex"
+              order={[1, 3]}
               className="contact"
+              width={["40%", "22%"]}
               justifyContent="flex-end"
             >
               <Link to="/contact">Contact</Link>
