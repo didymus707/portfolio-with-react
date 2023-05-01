@@ -50,19 +50,22 @@ export const Contact = () => (
             alignItems="center"
             href="mailto:didymus7007@gmail.com"
             flex={["1 1 100%", "1 1 45%", "1 1 25%"]}
+            _hover={{
+              bgGradient: "linear(to-r, slateblue, coral)",
+              bgClip: "text",
+              // bgClip: "border-box",
+            }}
           >
             <Icon as={BsEnvelope} mr="1rem" boxSize={6} />
             <BodyText fontSize="lg">didymus7007@gmail.com</BodyText>
           </Box>
           <Box
             p={4}
-            as="a"
             bg="#2D2E31"
             rounded="md"
             color="white"
             display="flex"
             alignItems="center"
-            href="mailto:didymus7007@gmail.com"
             flex={["1 1 100%", "1 1 45%", "1 1 25%"]}
           >
             <Icon as={GoLocation} mr="1rem" boxSize={6} />
@@ -84,19 +87,33 @@ export const Contact = () => (
             width={["100%", "55%", "25%"]}
           >
             <Link href="https://www.github.com/didymus707" isExternal>
-              <Icon as={FaGithub} boxSize={6} />
+              <Icon as={FaGithub} boxSize={6} _hover={{ color: "#ffffff94" }} />
             </Link>
             <Link
               href="https://www.linkedin.com/in/adewale-thomas-orotayo"
               isExternal
             >
-              <Icon as={FaLinkedinIn} boxSize={6} />
+              <Icon
+                as={FaLinkedinIn}
+                boxSize={6}
+                _hover={{ color: "#ffffff94" }}
+              />
             </Link>
             <Link href="https://didymus707.medium.com/" isExternal>
-              <Icon as={FaMediumM} boxSize={6} />
+              <Icon
+                as={FaMediumM}
+                boxSize={6}
+                _hover={{ color: "#ffffff94" }}
+              />
             </Link>
-            <Link href="https://www.twitter.com/didy707" isExternal>
-              <Icon as={FaTwitter} boxSize={6} />
+            <Link isExternal href="https://www.twitter.com/didy707">
+              <Icon
+                as={FaTwitter}
+                boxSize={6}
+                _hover={{
+                  color: "#ffffff94",
+                }}
+              />
             </Link>
           </Flex>
           <Divider
@@ -112,7 +129,7 @@ export const Contact = () => (
           <Subtitle color="whiteAlpha.800" textAlign="center" mr="1rem">
             Thanks
           </Subtitle>
-          <Icon as={FaSmile} color="yellow.400" boxSize={6} />
+          <Icon as={FaSmile} color="white" boxSize={6} />
         </Flex>
       </Box>
     </Container>

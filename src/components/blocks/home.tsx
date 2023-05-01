@@ -45,9 +45,10 @@ export const Home = () => (
           </Subtitle>
           <BodyText fontSize="2xl">Full Stack developer</BodyText>
           <Button
-            marginTop="1.5rem"
+            color='white'
             variant="outline"
-            // bgGradient="linear(to-r, slateblue, coral)"
+            marginTop="1.5rem"
+            _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
           >
             Contact Me
           </Button>

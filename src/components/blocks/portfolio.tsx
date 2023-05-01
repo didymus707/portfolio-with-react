@@ -38,8 +38,11 @@ export const Portfolio = () => {
             <ProjectBox />
             <ProjectBox />
           </Flex>
-          <Button variant="outline" color="white">
-            {/* <Button variant='outline' bgGradient="linear(to-r, slateblue, coral)" color="white"> */}
+          <Button
+            color="white"
+            variant="outline"
+            _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
+          >
             View More
           </Button>
         </VStack>
@@ -55,7 +58,7 @@ const ProjectBox = (props: BoxProps) => (
     rounded="2xl"
     height="405px"
     border="1px solid white"
-    mx={['auto', 'auto']}
+    mx={["auto", "auto"]}
     width={["100%", "80%", "45%", "45%", "32%"]}
   >
     <VStack height="100%">
@@ -82,7 +85,7 @@ const ProjectBox = (props: BoxProps) => (
           fontSize="0.75rem"
           width={["47%", "45%"]}
           variant="outline"
-          // bgGradient="linear(to-r, slateblue, coral)"
+          _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
         >
           Live Preview
         </Button>
@@ -92,7 +95,7 @@ const ProjectBox = (props: BoxProps) => (
           variant="outline"
           fontSize="0.75rem"
           width={["48%", "48%"]}
-          // bgGradient="linear(to-r, slateblue, coral)"
+          _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
         >
           Check on Github
         </Button>
