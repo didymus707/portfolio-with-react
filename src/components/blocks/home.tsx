@@ -6,13 +6,30 @@ export const Home = () => (
   <Box style={{ boxShadow: "-23px 28px 18px -39px #000000" }}>
     <Container maxW="1000px">
       <Flex
-        color="whiteAlpha.800"
-        align="center"
-        width="100%"
+        // wrap={["wrap", "nowrap"]}
         mb="6rem"
+        width="100%"
+        align="center"
         justify="center"
+        color="whiteAlpha.800"
       >
-        <Box width="45%">
+        <Box
+          width={["100%", "24%"]}
+          style={{
+            backgroundImage: `url("https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg")`,
+          }}
+        >
+          <Image
+            width="100%"
+            boxSize="550px"
+            objectFit="cover"
+            objectPosition="bottom"
+            src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"
+            // src="https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg"
+            alt="Adewale Orotayo"
+          />
+        </Box>
+        <Box width={["100%", "45%"]} order={[-1]}>
           <Subtitle fontSize="4xl">
             I'm{" "}
             <Box
@@ -27,7 +44,7 @@ export const Home = () => (
           <BodyText fontSize="2xl">Full Stack developer</BodyText>
           <Button
             marginTop="1.5rem"
-            variant='outline'
+            variant="outline"
             // bgGradient="linear(to-r, slateblue, coral)"
           >
             Contact Me
@@ -41,23 +58,6 @@ export const Home = () => (
           >
             Contact Me
           </Button> */}
-        </Box>
-        <Box
-          ml="2rem"
-          width="24%"
-          style={{
-            backgroundImage: `url("https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg")`,
-          }}
-        >
-          <Image
-            width="100%"
-            boxSize="550px"
-            objectFit="cover"
-            objectPosition="bottom"
-            src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"
-            // src="https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg"
-            alt="Adewale Orotayo"
-          />
         </Box>
       </Flex>
     </Container>
