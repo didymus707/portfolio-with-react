@@ -12,16 +12,16 @@ import React, { forwardRef } from "react";
 type IconsProps = {
   icon: any;
   iconName: string;
-  leftMargin?: string;
+  leftMargin?: string | object;
   rightMargin?: string;
-  margin?: string;
+  margin?: string | object;
 } & IconProps;
 
 const CustomIcons = (props: IconsProps) => {
   const { iconName, icon, leftMargin, rightMargin, margin, ...rest } = props;
   return (
     <Flex
-      width="23%"
+      width={['44%', "23%"]}
       bg="#2D2E31"
       rounded="2xl"
       height="220px"
