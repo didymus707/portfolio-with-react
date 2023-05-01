@@ -59,9 +59,9 @@ export const About = () => {
                 >
                   <Flex
                     width="100%"
-                    gap={["20px", 0]}
                     justify="center"
-                    wrap={["wrap", "nowrap"]}
+                    gap={["20px", "20px", 0]}
+                    wrap={["wrap", "wrap", "nowrap"]}
                   >
                     <CustomIcons
                       icon={FaReact}
@@ -71,13 +71,13 @@ export const About = () => {
                     <CustomIcons
                       icon={Git}
                       iconName="Git"
-                      leftMargin={[0, "1rem"]}
+                      leftMargin={[0, 0, "1rem"]}
                     />
                     <CustomIcons
                       boxSize={20}
                       icon={NodeJS}
                       iconName="NodeJs"
-                      margin={[0, "1rem"]}
+                      margin={[0, 0, "1rem"]}
                     />
                     <CustomIcons
                       boxSize={12}
@@ -88,14 +88,14 @@ export const About = () => {
                   <Flex
                     width="100%"
                     justify="center"
-                    gap={["20px", 0]}
-                    wrap={["wrap", "nowrap"]}
+                    gap={["20px", "20px", 0]}
+                    wrap={["wrap", "wrap", "nowrap"]}
                   >
                     <CustomIcons icon={Javascript} iconName="Javascript" />
                     <CustomIcons
                       icon={Ruby}
                       iconName="Ruby"
-                      margin={[0, "1rem"]}
+                      margin={[0, 0, "1rem"]}
                     />
                     <CustomIcons
                       icon={RubyOnRails}

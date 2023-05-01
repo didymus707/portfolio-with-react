@@ -21,7 +21,6 @@ const CustomIcons = (props: IconsProps) => {
   const { iconName, icon, leftMargin, rightMargin, margin, ...rest } = props;
   return (
     <Flex
-      width={['44%', "23%"]}
       bg="#2D2E31"
       rounded="2xl"
       height="220px"
@@ -31,6 +30,7 @@ const CustomIcons = (props: IconsProps) => {
       marginX={margin}
       marginLeft={leftMargin}
       marginRight={rightMargin}
+      width={["47%", "45%", "23%"]}
     >
       <Icon as={icon} boxSize={16} flexBasis="50%" {...rest} />
       <BodyText fontSize="xl" textAlign="center">

@@ -14,9 +14,10 @@ export const Header = () => {
             width="100%"
             color="white"
             align="center"
+            px={[0, "2rem"]}
             justify="space-between"
           >
-            <Flex className="logo" align="center" width={["40%", "22%"]}>
+            <Flex className="logo" align="center" width={["40%", "40%", "22%"]}>
               <Avatar
                 bgGradient="linear(to-r, slateblue, coral)"
                 name="Adewale Orotayo"
@@ -34,11 +35,11 @@ export const Header = () => {
             </Flex>
             <Flex
               ml="auto"
-              mt={[4, 0]}
-              order={[3, 1]}
+              mt={[4, 4, 0]}
+              order={[3, 3, 1]}
               className="others"
-              justify="space-evenly"
-              width={['100%', "42%"]}
+              width={["100%", "100%", "42%"]}
+              justify={["space-evenly", "space-evenly"]}
             >
               <Link to="/projects">Projects</Link>
               <Link to="/about">About</Link>
@@ -46,10 +47,10 @@ export const Header = () => {
             </Flex>
             <Box
               display="flex"
-              order={[1, 3]}
+              order={[1, 1, 3]}
               className="contact"
-              width={["40%", "22%"]}
               justifyContent="flex-end"
+              width={["40%", "40%", "22%"]}
             >
               <Link to="/contact">Contact</Link>
             </Box>

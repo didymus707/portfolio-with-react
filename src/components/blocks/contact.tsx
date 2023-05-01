@@ -33,7 +33,13 @@ export const Contact = () => (
           </Box>
         </Flex>
 
-        <Flex gap="2rem" justify="center">
+        <Flex
+          gap="2rem"
+          justify="center"
+          margin={[0, 0, "0 auto", "0 auto", "0 auto"]}
+          width={["100%", "100%", "75%"]}
+          wrap={["wrap", "wrap", "nowrap"]}
+        >
           <Box
             p={4}
             as="a"
@@ -43,7 +49,7 @@ export const Contact = () => (
             display="flex"
             alignItems="center"
             href="mailto:didymus7007@gmail.com"
-            flexBasis="25%"
+            flex={["1 1 100%", "1 1 45%", "1 1 25%"]}
           >
             <Icon as={BsEnvelope} mr="1rem" boxSize={6} />
             <BodyText fontSize="lg">didymus7007@gmail.com</BodyText>
@@ -57,7 +63,7 @@ export const Contact = () => (
             display="flex"
             alignItems="center"
             href="mailto:didymus7007@gmail.com"
-            flexBasis="25%"
+            flex={["1 1 100%", "1 1 45%", "1 1 25%"]}
           >
             <Icon as={GoLocation} mr="1rem" boxSize={6} />
             <BodyText fontSize="lg">Lagos, Nigeria</BodyText>
@@ -72,7 +78,11 @@ export const Contact = () => (
             border="3px solid transparent"
             borderRadius="3xl"
           />
-          <Flex color="white" justify="space-evenly" width="25%">
+          <Flex
+            color="white"
+            justify="space-evenly"
+            width={["100%", "55%", "25%"]}
+          >
             <Link href="https://www.github.com/didymus707" isExternal>
               <Icon as={FaGithub} boxSize={6} />
             </Link>
@@ -98,7 +108,7 @@ export const Contact = () => (
           />
         </Flex>
 
-        <Flex mt="8rem" align="center" justify="center">
+        <Flex mt="4rem" align="center" justify="center">
           <Subtitle color="whiteAlpha.800" textAlign="center" mr="1rem">
             Thanks
           </Subtitle>

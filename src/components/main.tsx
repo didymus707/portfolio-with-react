@@ -4,7 +4,7 @@ import { Contact } from "./blocks/contact";
 
 const Main = () => {
   return (
-    <Stack mt="6rem">
+    <Stack mt="6rem" px={[0, 0]}>
       <Home />
       <Portfolio />
       <About />

@@ -5,7 +5,7 @@ import Main from "./components/main";
 
 const Page = () => {
   return (
-    <Box bg="#282929" pb="100px">
+    <Box bg="#282929" p="0" overflow="hidden">
       <Header />
       <Main />
     </Box>

@@ -3,14 +3,16 @@ import React from "react";
 import { BodyText, Subtitle } from "../custom/icons";
 
 export const Home = () => (
-  <Box style={{ boxShadow: "-23px 28px 18px -39px #000000" }}>
+  <Box
+    boxShadow={["-19px 28px 18px -39px #000", "-19px 32px 18px -39px #000000"]}
+  >
     <Container maxW="1000px">
       <Flex
-        // wrap={["wrap", "nowrap"]}
         mb="6rem"
         width="100%"
         align="center"
         justify="center"
+        mx={["1.2rem", 0]}
         color="whiteAlpha.800"
       >
         <Box
@@ -29,13 +31,13 @@ export const Home = () => (
             alt="Adewale Orotayo"
           />
         </Box>
-        <Box width={["100%", "45%"]} order={[-1]}>
+        <Box width={["100%", "45%"]} order={[-1, 0]} ml={["0", "1.5rem"]}>
           <Subtitle fontSize="4xl">
             I'm{" "}
             <Box
               as="span"
-              bgGradient="linear(to-r, slateblue, coral)"
               bgClip="text"
+              bgGradient="linear(to-r, slateblue, coral)"
             >
               Adewale Orotayo
             </Box>
@@ -49,15 +51,6 @@ export const Home = () => (
           >
             Contact Me
           </Button>
-          {/* <Button
-            marginTop="1.5rem"
-            background="linear-gradient(#282929 0 0) padding-box, linear-gradient(45deg, slateblue, coral) border-box"
-            padding="10px"
-            border="2px solid transparent"
-            border-radius="15px"
-          >
-            Contact Me
-          </Button> */}
         </Box>
       </Flex>
     </Container>
