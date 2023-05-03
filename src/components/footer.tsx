@@ -1,8 +1,5 @@
 import { Box, Container, Divider, Flex, Icon, Link } from "@chakra-ui/react";
-// import { useEffect } from "react";
-import { BodyText, Heading2, Subtitle } from "../custom/icons";
-import { BsEnvelope } from "react-icons/bs";
-import { GoLocation } from "react-icons/go";
+import { Subtitle } from "./custom/icons";
 import {
   FaGithub,
   FaLinkedinIn,
@@ -11,68 +8,10 @@ import {
   FaSmile,
 } from "react-icons/fa";
 
-export const Contact = () => (
-  <Box bg="#282929" py="6rem">
-    <Container maxW="1000px">
-      <Heading2 color="white">Contact</Heading2>
+export const Footer = () => (
+  <Box bg="#282929" py="4rem" >
+    <Container maxW="1200px">
       <Box ml="1rem">
-        <Flex align="baseline" my="2.5rem">
-          <Divider
-            width="2rem"
-            variant="solid"
-            background="linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, slateblue, coral) border-box"
-            border="4px solid transparent"
-            borderRadius="3xl"
-          />
-          <Box ml="0.9rem">
-            <BodyText color="whiteAlpha.800" fontSize="xl">
-              You are free to reach out to me whether you have a project or
-              question or you just want to say hi and I'll try my best to get
-              back to you
-            </BodyText>
-          </Box>
-        </Flex>
-
-        <Flex
-          gap="2rem"
-          justify="center"
-          margin={[0, 0, "0 auto", "0 auto", "0 auto"]}
-          width={["100%", "100%", "75%"]}
-          wrap={["wrap", "wrap", "nowrap"]}
-        >
-          <Box
-            p={4}
-            as="a"
-            bg="#2D2E31"
-            rounded="md"
-            color="white"
-            display="flex"
-            alignItems="center"
-            href="mailto:didymus7007@gmail.com"
-            flex={["1 1 100%", "1 1 45%", "1 1 25%"]}
-            _hover={{
-              bgGradient: "linear(to-r, slateblue, coral)",
-              bgClip: "text",
-              // bgClip: "border-box",
-            }}
-          >
-            <Icon as={BsEnvelope} mr="1rem" boxSize={6} />
-            <BodyText fontSize="lg">didymus7007@gmail.com</BodyText>
-          </Box>
-          <Box
-            p={4}
-            bg="#2D2E31"
-            rounded="md"
-            color="white"
-            display="flex"
-            alignItems="center"
-            flex={["1 1 100%", "1 1 45%", "1 1 25%"]}
-          >
-            <Icon as={GoLocation} mr="1rem" boxSize={6} />
-            <BodyText fontSize="lg">Lagos, Nigeria</BodyText>
-          </Box>
-        </Flex>
-
         <Flex justify="center" align="center" mt="2rem">
           <Divider
             width="5rem"

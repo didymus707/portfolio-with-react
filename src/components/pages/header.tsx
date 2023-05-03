@@ -1,12 +1,12 @@
 import { Avatar, Box, Container, Flex } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { SmallSubtitle } from "./custom/icons";
+import { SmallSubtitle } from "../custom/icons";
 
 export const Header = () => {
   return (
-    <Box>
-      <Container maxW="1000px">
+    <Box bg="#282929" mb="2rem">
+      <Container maxW="1200px">
         <nav>
           <Flex
             py="1rem"
@@ -14,25 +14,30 @@ export const Header = () => {
             width="100%"
             color="white"
             align="center"
-            px={[0, "2rem"]}
             justify="space-between"
           >
-            <Flex className="logo" align="center" width={["40%", "40%", "22%"]}>
-              <Avatar
-                bgGradient="linear(to-r, slateblue, coral)"
-                name="Adewale Orotayo"
-                size="md"
-              />
-              <SmallSubtitle
-                as="h1"
-                ml="8px"
-                bgClip="text"
-                rounded="3xl"
-                bgGradient="linear(to-r, slateblue, coral)"
+            <Link to="/">
+              <Flex
+                className="logo"
+                align="center"
+                width={["40%", "40%", "22%"]}
               >
-                <span>Adewale</span> <br /> <span>Orotayo</span>
-              </SmallSubtitle>
-            </Flex>
+                <Avatar
+                  bgGradient="linear(to-r, slateblue, coral)"
+                  name="Adewale Orotayo"
+                  size="md"
+                />
+                <SmallSubtitle
+                  as="h1"
+                  ml="8px"
+                  bgClip="text"
+                  rounded="3xl"
+                  bgGradient="linear(to-r, slateblue, coral)"
+                >
+                  <span>Adewale</span> <br /> <span>Orotayo</span>
+                </SmallSubtitle>
+              </Flex>
+            </Link>
             <Flex
               ml="auto"
               mt={[4, 4, 0]}

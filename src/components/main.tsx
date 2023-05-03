@@ -1,16 +1,18 @@
 import { Stack } from "@chakra-ui/react";
-import { Home, About, Portfolio, Experience } from "./blocks";
-import { Contact } from "./blocks/contact";
+import { Home, About, Portfolio, Experience } from "./pages";
+import { Contact } from "./pages/contact";
 
 const Main = () => {
   return (
-    <Stack mt="6rem" px={[0, 0]}>
-      <Home />
-      <Portfolio />
-      <About />
-      <Experience />
-      <Contact />
-    </Stack>
+    <main>
+      <Stack mt="6rem" px={[0, 0]}>
+        <Home />
+        <Portfolio />
+        <About />
+        <Experience />
+        <Contact />
+      </Stack>
+    </main>
   );
 };
 

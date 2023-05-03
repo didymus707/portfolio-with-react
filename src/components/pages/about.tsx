@@ -15,10 +15,10 @@ import CustomIcons, {
 
 export const About = () => {
   return (
-    <Box>
-      <Container maxW="1000px">
+    <Box id="about" bg="#282929">
+      <Container maxW="1200px">
         <Stack color="white" direction="column" className="about-classs">
-          <Box mt="1rem">
+          <Box mt="4rem">
             <Heading2 color="white">About</Heading2>
             <Stack ml="1rem">
               <Flex align="baseline" my="2.5rem">

@@ -4,9 +4,10 @@ import { BodyText, Subtitle } from "../custom/icons";
 
 export const Home = () => (
   <Box
+    bg="#282929"
     boxShadow={["-19px 28px 18px -39px #000", "-19px 32px 18px -39px #000000"]}
   >
-    <Container maxW="1000px">
+    <Container maxW="1200px">
       <Flex
         mb="6rem"
         width="100%"
@@ -45,7 +46,7 @@ export const Home = () => (
           </Subtitle>
           <BodyText fontSize="2xl">Full Stack developer</BodyText>
           <Button
-            color='white'
+            color="white"
             variant="outline"
             marginTop="1.5rem"
             _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
