@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 const Page = () => {
   return (
     <Box bg="#282929" p="0" overflow="hidden">
-      <Outlet />
+      {/* <Outlet /> */}
       <Main />
     </Box>
   );

@@ -15,7 +15,7 @@ import CustomIcons, {
 
 export const About = () => {
   return (
-    <Box id="about" bg="#282929" mt='12rem'>
+    <Box id="about" bg="#282929" mt="12rem">
       <Container maxW="1200px">
         <Stack color="white" direction="column" className="about-classs">
           <Box mt="4rem">
@@ -31,20 +31,18 @@ export const About = () => {
                 />
                 <Box ml="1rem">
                   <BodyText color="whiteAlpha.800" fontSize="xl">
-                    Hi, I am Adewale, finding patterns in problems and providing
-                    solutions to them are the highlight of my day. I had a
-                    background in biochemistry and part of the skill I took from
-                    there is knowing the root cause of a problem and finding a
-                    solution to it. This skill has helped me in particular since
-                    I started programming as I must design and build an
-                    application or website that is fail-safe. <br />
-                    I am skilled in HTML & CSS, JavaScript, Ruby on Rails, React
-                    & Redux and soft skills such as communication, team
-                    collaboration, pair programming, remote working. I can work
-                    as a front end, back end or in the full stack position and I
-                    am open to learning also. <br /> In my free time, I play
-                    video games or play the guitar. I am open to new
-                    opportunities and challenges.
+                    Hi, I'm Adewale, a front-end developer with a passion for
+                    building beautiful and user-friendly interfaces. With
+                    expertise in React and Redux, I have successfully delivered
+                    several projects that have won recognition from clients and
+                    led to retaining them. One of such was a log interface that
+                    detailed the success or failure of marketing campaigns sent.
+                    <br />
+                    Outside of work, I enjoy playing the guitar and exploring
+                    new technologies. I am a firm believer in continuous
+                    learning and always stay up-to-date with the latest industry
+                    trends. I am excited to work on new projects and collaborate
+                    with like-minded individuals
                   </BodyText>
                 </Box>
               </Flex>

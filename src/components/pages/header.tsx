@@ -12,7 +12,7 @@ export const Header = () => {
       bg="#282929"
       zIndex={1000}
       position="fixed"
-      boxShadow="0 1px 10px black"
+      boxShadow="0 1px 10px -5px black"
     >
       <Container maxW="1200px">
         <nav>
