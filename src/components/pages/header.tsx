@@ -46,9 +46,9 @@ export const Header = () => {
               width={["100%", "100%", "42%"]}
               justify={["space-evenly", "space-evenly"]}
             >
-              <Link to="/projects">Projects</Link>
               <Link to="/about">About</Link>
               <Link to="/experience">Experience</Link>
+              <Link to="/projects">Projects</Link>
             </Flex>
             <Box
               display="flex"

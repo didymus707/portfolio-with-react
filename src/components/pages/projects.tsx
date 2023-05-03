@@ -36,6 +36,8 @@ export const Portfolio = () => {
             <ProjectBox
               title="My Portfolio"
               alt="My PPortfolio"
+              preview="diddys-resume.netlify.app"
+              github="https://github.com/didymus707/portfolio-with-react"
               summary="This project is built with React, TypeScript and Chakra Ui and implements React Router v6 for routing"
               src="https://res.cloudinary.com/didymus/image/upload/v1683120432/Screen_Shot_2023-05-03_at_2.26.52_PM_sre5rj.png"
             />
