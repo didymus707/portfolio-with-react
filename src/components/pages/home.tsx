@@ -27,12 +27,12 @@ export const Home = () => (
             boxSize="550px"
             objectFit="cover"
             objectPosition="bottom"
-            src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"
+            src="https://media.licdn.com/dms/image/C4D03AQGkieMxvsI8XA/profile-displayphoto-shrink_400_400/0/1583250061688?e=1688601600&v=beta&t=OZnBDGl14uGutvldpdn0oTtaFGXpDqkrL_0AO2ta0VI"
             // src="https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg"
             alt="Adewale Orotayo"
           />
         </Box>
-        <Box width={["100%", "45%"]} order={[-1, 0]} ml={["0", "1.5rem"]}>
+        <Box width={["100%", "45%"]} order={[-1, 0]} ml={["0", "3rem"]}>
           <Subtitle fontSize="4xl">
             I'm{" "}
             <Box
@@ -44,7 +44,7 @@ export const Home = () => (
             </Box>
             ,
           </Subtitle>
-          <BodyText fontSize="2xl">Full Stack developer</BodyText>
+          <BodyText fontSize="2xl">Front End developer</BodyText>
           <Button
             color="white"
             variant="outline"

@@ -7,9 +7,9 @@ const Main = () => {
     <main>
       <Stack mt="6rem" px={[0, 0]}>
         <Home />
-        <Portfolio />
         <About />
         <Experience />
+        <Portfolio />
         <Contact />
       </Stack>
     </main>
