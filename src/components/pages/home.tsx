@@ -46,9 +46,12 @@ export const Home = () => (
           </Subtitle>
           <BodyText fontSize="2xl">Front End developer</BodyText>
           <Button
+            as="a"
             color="white"
+            target='_blank'
             variant="outline"
             marginTop="1.5rem"
+            href="mailto:didymus7007@gmail.com"
             _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
           >
             Contact Me

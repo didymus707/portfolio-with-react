@@ -15,7 +15,7 @@ import CustomIcons, {
 
 export const About = () => {
   return (
-    <Box id="about" bg="#282929">
+    <Box id="about" bg="#282929" mt='12rem'>
       <Container maxW="1200px">
         <Stack color="white" direction="column" className="about-classs">
           <Box mt="4rem">

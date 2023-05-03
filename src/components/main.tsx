@@ -5,7 +5,7 @@ import { Contact } from "./pages/contact";
 const Main = () => {
   return (
     <main>
-      <Stack mt="6rem" px={[0, 0]}>
+      <Stack mt="12rem" px={[0, 0]}>
         <Home />
         <About />
         <Experience />

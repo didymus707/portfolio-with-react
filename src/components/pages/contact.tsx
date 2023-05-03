@@ -5,7 +5,7 @@ import { GoLocation } from "react-icons/go";
 
 
 export const Contact = () => (
-  <Box bg="#282929" mt='4rem' py="6rem">
+  <Box bg="#282929" mt='10rem' py="6rem">
     <Container maxW="1200px">
       <Heading2 color="white">Contact</Heading2>
       <Box ml="1rem">
