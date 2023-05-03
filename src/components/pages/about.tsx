@@ -15,12 +15,12 @@ import CustomIcons, {
 
 export const About = () => {
   return (
-    <Box>
-      <Container maxW="1000px">
+    <Box id="about" bg="#282929">
+      <Container maxW="1200px">
         <Stack color="white" direction="column" className="about-classs">
-          <Box mt="1rem">
+          <Box mt="4rem">
             <Heading2 color="white">About</Heading2>
-            <Stack ml='1rem'>
+            <Stack ml="1rem">
               <Flex align="baseline" my="2.5rem">
                 <Divider
                   width="5rem"
@@ -57,18 +57,27 @@ export const About = () => {
                   mt="3rem !important"
                   flexDirection="column"
                 >
-                  <Flex justify="center">
+                  <Flex
+                    width="100%"
+                    justify="center"
+                    gap={["20px", "20px", 0]}
+                    wrap={["wrap", "wrap", "nowrap"]}
+                  >
                     <CustomIcons
                       icon={FaReact}
                       color="#00D8FF"
                       iconName="React"
                     />
-                    <CustomIcons icon={Git} iconName="Git" leftMargin="1rem" />
                     <CustomIcons
-                      boxSize={24}
+                      icon={Git}
+                      iconName="Git"
+                      leftMargin={[0, 0, "1rem"]}
+                    />
+                    <CustomIcons
+                      boxSize={20}
                       icon={NodeJS}
                       iconName="NodeJs"
-                      margin="1rem"
+                      margin={[0, 0, "1rem"]}
                     />
                     <CustomIcons
                       boxSize={12}
@@ -76,9 +85,18 @@ export const About = () => {
                       iconName="TypeScript"
                     />
                   </Flex>
-                  <Flex justify="center">
+                  <Flex
+                    width="100%"
+                    justify="center"
+                    gap={["20px", "20px", 0]}
+                    wrap={["wrap", "wrap", "nowrap"]}
+                  >
                     <CustomIcons icon={Javascript} iconName="Javascript" />
-                    <CustomIcons icon={Ruby} iconName="Ruby" margin="1rem" />
+                    <CustomIcons
+                      icon={Ruby}
+                      iconName="Ruby"
+                      margin={[0, 0, "1rem"]}
+                    />
                     <CustomIcons
                       icon={RubyOnRails}
                       iconName="Ruby on Rails"

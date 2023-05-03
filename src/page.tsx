@@ -1,12 +1,12 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { Header } from "./components/header";
 import Main from "./components/main";
+import { Outlet } from "react-router-dom";
 
 const Page = () => {
   return (
-    <Box bg="#282929" pb="100px">
-      <Header />
+    <Box bg="#282929" p="0" overflow="hidden">
+      <Outlet />
       <Main />
     </Box>
   );
