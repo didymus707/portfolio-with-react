@@ -5,11 +5,19 @@ import { SmallSubtitle } from "../custom/icons";
 
 export const Header = () => {
   return (
-    <Box bg="#282929" mb="2rem">
+    <Box
+      left="0"
+      right="0"
+      mb="2rem"
+      bg="#282929"
+      zIndex={1000}
+      position="fixed"
+      boxShadow="0 1px 10px -5px black"
+    >
       <Container maxW="1200px">
         <nav>
           <Flex
-            py="1rem"
+            py="2rem"
             wrap="wrap"
             width="100%"
             color="white"

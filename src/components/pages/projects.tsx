@@ -16,6 +16,7 @@ export const Portfolio = () => {
     <Box
       id="projects"
       bg="#282929"
+      mt='12rem'
       style={{
         paddingTop: "6rem",
         paddingBottom: "6rem",

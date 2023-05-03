@@ -5,7 +5,7 @@ import { BodyText, Subtitle } from "../custom/icons";
 export const Home = () => (
   <Box
     bg="#282929"
-    boxShadow={["-19px 28px 18px -39px #000", "-19px 32px 18px -39px #000000"]}
+    boxShadow={["-19px 28px 18px -39px #000", "0 6px 10px -10px black"]}
   >
     <Container maxW="1200px">
       <Flex
@@ -46,9 +46,12 @@ export const Home = () => (
           </Subtitle>
           <BodyText fontSize="2xl">Front End developer</BodyText>
           <Button
+            as="a"
             color="white"
+            target="_blank"
             variant="outline"
             marginTop="1.5rem"
+            href="mailto:didymus7007@gmail.com"
             _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
           >
             Contact Me
