@@ -1,9 +1,20 @@
 import { Avatar, Box, Container, Flex } from "@chakra-ui/react";
-import React from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { SmallSubtitle } from "../custom/icons";
 
 export const Header = () => {
+  const ref = useRef<HTMLAnchorElement>(null);
+
+  const handleScrollToTop = () => {
+    if (ref.current) {
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <Box
       left="0"
@@ -24,7 +35,7 @@ export const Header = () => {
             align="center"
             justify="space-between"
           >
-            <Link to="/">
+            <Link to="/" ref={ref} onClick={handleScrollToTop}>
               <Flex
                 className="logo"
                 align="center"

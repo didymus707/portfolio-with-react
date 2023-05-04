@@ -46,7 +46,6 @@ export const Contact = () => (
             _hover={{
               bgGradient: "linear(to-r, slateblue, coral)",
               bgClip: "text",
-              // bgClip: "border-box",
             }}
           >
             <Icon as={BsEnvelope} mr="1rem" boxSize={6} />

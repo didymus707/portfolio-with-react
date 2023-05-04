@@ -1,6 +1,7 @@
 import { Stack } from "@chakra-ui/react";
-import { Home, About, Portfolio, Experience } from "./pages";
 import { Contact } from "./pages/contact";
+import ScrollToTop from "react-scroll-to-top";
+import { Home, About, Portfolio, Experience } from "./pages";
 
 const Main = () => {
   return (
@@ -11,6 +12,12 @@ const Main = () => {
         <Experience />
         <Portfolio />
         <Contact />
+        <ScrollToTop
+          width="40"
+          color="white"
+          smooth={true}
+          style={{ background: "none", margin: "0 auto" }}
+        />
       </Stack>
     </main>
   );
