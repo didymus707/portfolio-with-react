@@ -9,6 +9,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import { Badge } from "@chakra-ui/react";
 import { SmallSubtitle, BodyText, Heading2 } from "../custom/icons";
 
 export const Portfolio = () => {
@@ -35,8 +36,9 @@ export const Portfolio = () => {
             style={{ marginTop: "3rem" }}
           >
             <ProjectBox
-              title="My Portfolio"
+              title="Todo App"
               alt="My PPortfolio"
+              status="in progress"
               preview="urtask.netlify.app"
               github="https://github.com/didymus707/todo-app"
               summary="This Todo App is built with React, TypeScript and Tailwind and implements React Router v6 for routing"
@@ -104,10 +106,11 @@ type ProjectBoxProps = {
   summary?: string;
   preview?: string;
   github?: string;
+  status?: string;
 } & BoxProps;
 
 const ProjectBox = (props: ProjectBoxProps) => {
-  const { src, title, alt, summary, preview, github } = props;
+  const { src, title, alt, summary, preview, github, status } = props;
 
   return (
     <Stack
@@ -131,7 +134,10 @@ const ProjectBox = (props: ProjectBoxProps) => {
           />
         </Box>
         <Box width="100%" color="white" style={{ marginTop: "2rem" }}>
-          <SmallSubtitle>{title || "Title of my Project"}</SmallSubtitle>
+          <Flex justify="space-between" align="baseline">
+            <SmallSubtitle>{title || "Title of my Project"}</SmallSubtitle>
+            {status && <Badge colorScheme="red">In progress</Badge>}
+          </Flex>
           <BodyText mt="0.5rem">
             {summary || "Summary of the project and techs used in building it"}
           </BodyText>
