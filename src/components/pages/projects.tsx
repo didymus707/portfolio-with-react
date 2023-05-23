@@ -16,7 +16,7 @@ export const Portfolio = () => {
     <Box
       id="projects"
       bg="#282929"
-      mt='12rem'
+      mt="12rem"
       style={{
         paddingTop: "6rem",
         paddingBottom: "6rem",
@@ -34,6 +34,14 @@ export const Portfolio = () => {
             justify="space-between"
             style={{ marginTop: "3rem" }}
           >
+            <ProjectBox
+              title="My Portfolio"
+              alt="My PPortfolio"
+              preview="urtask.netlify.app"
+              github="https://github.com/didymus707/todo-app"
+              summary="This Todo App is built with React, TypeScript and Tailwind and implements React Router v6 for routing"
+              src="https://res.cloudinary.com/didymus/image/upload/v1684850988/Screen_Shot_2023-05-23_at_3.06.09_PM_m8ssyn.png"
+            />
             <ProjectBox
               title="My Portfolio"
               alt="My PPortfolio"
