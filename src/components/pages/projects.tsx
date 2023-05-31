@@ -45,11 +45,11 @@ export const Portfolio = () => {
               src="https://res.cloudinary.com/didymus/image/upload/v1684850988/Screen_Shot_2023-05-23_at_3.06.09_PM_m8ssyn.png"
             />
             <ProjectBox
-              title="My Portfolio"
-              alt="My PPortfolio"
-              preview="diddys-resume.netlify.app"
-              github="https://github.com/didymus707/portfolio-with-react"
-              summary="This project is built with React, TypeScript and Chakra Ui and implements React Router v6 for routing"
+              title="Card Page"
+              alt="card page"
+              preview="https://card-pagetr.netlify.app/"
+              github="https://github.com/didymus707/card-page"
+              summary="A responsive card page built with React, TypeScript and Chakra UI. Users can input their card information which displays the information that needs to be seen on the card"
               src="https://res.cloudinary.com/didymus/image/upload/v1683120432/Screen_Shot_2023-05-03_at_2.26.52_PM_sre5rj.png"
             />
             <ProjectBox
