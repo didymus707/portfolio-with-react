@@ -37,9 +37,9 @@ export const Portfolio = () => {
           >
             <ProjectBox
               title="Todo App"
-              alt="My PPortfolio"
+              alt="todo app"
               status="in progress"
-              preview="urtask.netlify.app"
+              preview="targit.netlify.app"
               github="https://github.com/didymus707/todo-app"
               summary="This Todo App is built with React, TypeScript and Tailwind and implements React Router v6 for routing"
               src="https://res.cloudinary.com/didymus/image/upload/v1685573759/Screen_Shot_2023-05-29_at_7.12.02_PM_qurmsc.png"
@@ -49,8 +49,8 @@ export const Portfolio = () => {
               alt="card page"
               preview="https://card-pagetr.netlify.app/"
               github="https://github.com/didymus707/card-page"
-              summary="A responsive card page built with React, TypeScript and Chakra UI. Users can input their card information which displays the information that needs to be seen on the card"
-              src="https://res.cloudinary.com/didymus/image/upload/v1683120432/Screen_Shot_2023-05-03_at_2.26.52_PM_sre5rj.png"
+              summary="A responsive card page built with React, TypeScript and Chakra UI."
+              src="https://res.cloudinary.com/didymus/image/upload/v1685573759/Screen_Shot_2023-05-29_at_7.12.02_PM_qurmsc.png"
             />
             <ProjectBox
               alt="Earth Defenders"

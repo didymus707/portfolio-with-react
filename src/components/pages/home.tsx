@@ -11,10 +11,12 @@ export const Home = () => (
       <Flex
         mb="6rem"
         width="100%"
+        rowGap="2rem"
         align="center"
         justify="center"
-        mx={["1.2rem", 0]}
+        px={["1rem", null]}
         color="whiteAlpha.800"
+        wrap={["wrap", "nowrap"]}
       >
         <Box
           width={["100%", "24%"]}
@@ -32,8 +34,8 @@ export const Home = () => (
             alt="Adewale Orotayo"
           />
         </Box>
-        <Box width={["100%", "45%"]} order={[-1, 0]} ml={["0", "3rem"]}>
-          <Subtitle fontSize="4xl">
+        <Box width={["100%", "51%"]} order={[-1, 0]} ml={["0", "3rem"]}>
+          <Subtitle fontSize={["3xl", "4xl"]}>
             I'm{" "}
             <Box
               as="span"
@@ -56,6 +58,30 @@ export const Home = () => (
           >
             Contact Me
           </Button>
+          {/* <Flex>
+            <Button
+              as="a"
+              color="white"
+              target="_blank"
+              variant="outline"
+              marginTop="1.5rem"
+              href="mailto:didymus7007@gmail.com"
+              _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
+            >
+              Contact Me
+            </Button>
+            <Button
+              as="a"
+              color="white"
+              target="_blank"
+              variant="outline"
+              marginTop="1.5rem"
+              onClick={() => window.print()}
+              _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
+            >
+              Download CV
+            </Button>
+          </Flex> */}
         </Box>
       </Flex>
     </Container>
