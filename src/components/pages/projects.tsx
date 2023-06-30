@@ -39,7 +39,7 @@ export const Portfolio = () => {
               title="Todo App"
               alt="todo app"
               status="in progress"
-              preview="targit.netlify.app"
+              preview="https://targit.netlify.app"
               github="https://github.com/didymus707/todo-app"
               summary="This Todo App is built with React, TypeScript and Tailwind and implements React Router v6 for routing"
               src="https://res.cloudinary.com/didymus/image/upload/v1685573759/Screen_Shot_2023-05-29_at_7.12.02_PM_qurmsc.png"
