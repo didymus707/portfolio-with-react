@@ -61,7 +61,7 @@ export const Contact = () => (
             flex={["1 1 100%", "1 1 45%", "1 1 25%"]}
           >
             <Icon as={GoLocation} mr="1rem" boxSize={6} />
-            <BodyText fontSize="lg">Lagos, Nigeria</BodyText>
+            <BodyText fontSize="lg">Sunderland, UK</BodyText>
           </Box>
         </Flex>
 
