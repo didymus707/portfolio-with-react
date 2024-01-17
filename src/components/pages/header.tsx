@@ -1,6 +1,7 @@
 import { Avatar, Box, Container, Flex } from "@chakra-ui/react";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link as ReactRouterLink } from "react-router-dom";
+import { Link as ChakraLink } from "@chakra-ui/react";
 import { SmallSubtitle } from "../custom/icons";
 
 export const Header = () => {
@@ -35,7 +36,7 @@ export const Header = () => {
             align="center"
             justify="space-between"
           >
-            <Link to="/" ref={ref} onClick={handleScrollToTop}>
+            <ChakraLink as={ReactRouterLink} to="/" ref={ref} onClick={handleScrollToTop}>
               <Flex
                 className="logo"
                 align="center"
@@ -56,7 +57,7 @@ export const Header = () => {
                   <span>Adewale</span> <br /> <span>Orotayo</span>
                 </SmallSubtitle>
               </Flex>
-            </Link>
+            </ChakraLink>
             <Flex
               ml="auto"
               mt={[4, 4, 0]}
@@ -65,9 +66,9 @@ export const Header = () => {
               width={["100%", "100%", "42%"]}
               justify={["space-evenly", "space-evenly"]}
             >
-              <Link to="/about">About</Link>
-              <Link to="/experience">Experience</Link>
-              <Link to="/projects">Projects</Link>
+              <ChakraLink as={ReactRouterLink} to="/about">About</ChakraLink>
+              <ChakraLink as={ReactRouterLink} to="/experience">Experience</ChakraLink>
+              <ChakraLink as={ReactRouterLink} to="/projects">Projects</ChakraLink>
             </Flex>
             <Box
               display="flex"
@@ -76,7 +77,7 @@ export const Header = () => {
               justifyContent="flex-end"
               width={["40%", "40%", "22%"]}
             >
-              <Link to="/contact">Contact</Link>
+              <ChakraLink as={ReactRouterLink} to="/contact">Contact</ChakraLink>
             </Box>
           </Flex>
         </nav>
