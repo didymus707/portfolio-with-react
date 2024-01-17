@@ -36,7 +36,12 @@ export const Header = () => {
             align="center"
             justify="space-between"
           >
-            <ChakraLink as={ReactRouterLink} to="/" ref={ref} onClick={handleScrollToTop}>
+            <ChakraLink
+              as={ReactRouterLink}
+              to="/"
+              ref={ref}
+              onClick={handleScrollToTop}
+            >
               <Flex
                 className="logo"
                 align="center"
@@ -66,9 +71,37 @@ export const Header = () => {
               width={["100%", "100%", "42%"]}
               justify={["space-evenly", "space-evenly"]}
             >
-              <ChakraLink as={ReactRouterLink} to="/about">About</ChakraLink>
-              <ChakraLink as={ReactRouterLink} to="/experience">Experience</ChakraLink>
-              <ChakraLink as={ReactRouterLink} to="/projects">Projects</ChakraLink>
+              <ChakraLink
+                _hover={{
+                  color: "transparent",
+                  backgroundImage: "linear(45deg, slateblue, coral)",
+                  backgroundSize: '100%',
+                  backgroundClip: "text",
+                  transition: "background 0.3s ease",
+                }}
+                as={ReactRouterLink}
+                to="/about"
+              >
+                About
+              </ChakraLink>
+              <ChakraLink _hover={{
+                  color: "transparent",
+                  backgroundImage: "linear(45deg, slateblue, coral)",
+                  backgroundSize: '100%',
+                  backgroundClip: "text",
+                  transition: "background 0.3s ease",
+                }} as={ReactRouterLink} to="/experience">
+                Experience
+              </ChakraLink>
+              <ChakraLink _hover={{
+                  color: "transparent",
+                  backgroundImage: "linear(45deg, slateblue, coral)",
+                  backgroundSize: '100%',
+                  backgroundClip: "text",
+                  transition: "background 0.3s ease",
+                }} as={ReactRouterLink} to="/projects">
+                Projects
+              </ChakraLink>
             </Flex>
             <Box
               display="flex"
@@ -77,7 +110,15 @@ export const Header = () => {
               justifyContent="flex-end"
               width={["40%", "40%", "22%"]}
             >
-              <ChakraLink as={ReactRouterLink} to="/contact">Contact</ChakraLink>
+              <ChakraLink _hover={{
+                  color: "transparent",
+                  backgroundImage: "linear(45deg, slateblue, coral)",
+                  backgroundSize: '100%',
+                  backgroundClip: "text",
+                  transition: "background 0.3s ease",
+                }} as={ReactRouterLink} to="/contact">
+                Contact
+              </ChakraLink>
             </Box>
           </Flex>
         </nav>
