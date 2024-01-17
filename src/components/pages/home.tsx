@@ -30,7 +30,6 @@ export const Home = () => (
             objectFit="cover"
             objectPosition="bottom"
             src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"
-            // src="https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg"
             alt="Adewale Orotayo"
           />
         </Box>
