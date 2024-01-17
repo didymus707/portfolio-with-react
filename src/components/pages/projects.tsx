@@ -36,13 +36,22 @@ export const Portfolio = () => {
             style={{ marginTop: "3rem" }}
           >
             <ProjectBox
+              title="Whatsapp Clone"
+              alt="whatsapp clone"
+              status="in progress"
+              preview="https://targit.netlify.app"
+              github="https://github.com/didymus707/whatsapp-clone"
+              summary="This app is built with NextJs, NodeJs, Prisma and Tailwind"
+              src="https://res.cloudinary.com/didymus/image/upload/v1685573759/Screen_Shot_2023-05-29_at_7.12.02_PM_qurmsc.png"
+            />
+            <ProjectBox
               title="Todo App"
               alt="todo app"
               status="in progress"
               preview="https://targit.netlify.app"
               github="https://github.com/didymus707/todo-app"
               summary="This Todo App is built with React, TypeScript and Tailwind and implements React Router v6 for routing"
-              src="https://res.cloudinary.com/didymus/image/upload/v1685573759/Screen_Shot_2023-05-29_at_7.12.02_PM_qurmsc.png"
+              src="https://res.cloudinary.com/didymus/image/upload/v1705397073/todo_jk9x3x.png"
             />
             <ProjectBox
               title="Card Page"
@@ -67,14 +76,6 @@ export const Portfolio = () => {
               github="https://github.com/didymus707/calclator"
               summary="This project was built with React and uses React Router v5"
               src="https://res.cloudinary.com/didymus/image/upload/v1683025981/Screen_Shot_2023-05-01_at_7.29.14_PM_dc9kbn.png"
-            />
-            <ProjectBox
-              alt="Weather App"
-              title="Weather App"
-              github="https://github.com/didymus707/Weather-App"
-              preview="https://didymus707.github.io/Weather-App/"
-              summary="This project was built with HTML, CSS and JavaScript and implemennts the Fetch APi"
-              src="https://res.cloudinary.com/didymus/image/upload/v1683121842/Screen_Shot_2023-05-03_at_2.46.46_PM_sf48ht.png"
             />
             <ProjectBox
               alt="Memory Game"
