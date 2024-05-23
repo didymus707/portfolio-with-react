@@ -29,7 +29,8 @@ export const Home = () => (
             boxSize="550px"
             objectFit="cover"
             objectPosition="bottom"
-            src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"
+            src="https://res.cloudinary.com/didymus/image/upload/e_background_removal/b_rgb:282929/c_pad,w_800,h_1422,ar_9:16,f_png/v1716467018/me_e5nfkj.jpg"
+            // src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"
             alt="Adewale Orotayo"
           />
         </Box>

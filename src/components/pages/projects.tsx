@@ -39,7 +39,7 @@ export const Portfolio = () => {
               title="Whatsapp Clone"
               alt="whatsapp clone"
               status="in progress"
-              preview="https://targit.netlify.app"
+              preview="#"
               github="https://github.com/didymus707/whatsapp-clone"
               summary="This app is built with NextJs, NodeJs, Prisma and Tailwind"
               src="https://res.cloudinary.com/didymus/image/upload/v1705484981/Untitled_design_gpdo4t.gif"
