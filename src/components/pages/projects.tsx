@@ -17,10 +17,10 @@ export const Portfolio = () => {
     <Box
       id="projects"
       bg="#282929"
-      mt="12rem"
+      mt="4rem"
       style={{
-        paddingTop: "6rem",
-        paddingBottom: "6rem",
+        paddingTop: "0.4rem",
+        paddingBottom: "0.4rem",
         background: "#2a2a29",
       }}
     >
@@ -31,9 +31,9 @@ export const Portfolio = () => {
         <VStack>
           <Flex
             wrap="wrap"
-            columnGap="0.5rem"
+            columnGap="1.2rem"
             justify="space-between"
-            style={{ marginTop: "3rem" }}
+            style={{ marginTop: "4rem" }}
           >
             <ProjectBox
               title="Whatsapp Clone"
