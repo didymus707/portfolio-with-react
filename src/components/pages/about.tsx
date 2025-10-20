@@ -15,13 +15,13 @@ import CustomIcons, {
 
 export const About = () => {
   return (
-    <Box id="about" bg="#282929" mt="12rem">
+    <Box id="about" bg="#353533">
       <Container maxW="1200px">
         <Stack color="white" direction="column" className="about-classs">
-          <Box mt="4rem">
+          <Box mt="6rem">
             <Heading2 color="white">About</Heading2>
             <Stack ml="1rem">
-              <Flex align="baseline" my="2.5rem">
+              <Flex align="baseline" mt="4rem">
                 <Divider
                   width="5rem"
                   variant="solid"
@@ -47,68 +47,40 @@ export const About = () => {
                 </Box>
               </Flex>
 
-              <Box className="skills" style={{ margin: "4rem 0" }}>
+              <Box className="skills" style={{ margin: "4rem 0 6rem" }}>
                 <Heading2 textAlign="center">My Skills</Heading2>
                 <Flex
                   gap="30px"
                   width="100%"
-                  mt="3rem !important"
+                  mt="4rem !important"
                   flexDirection="column"
                 >
-                  <Flex
-                    width="100%"
-                    justify="center"
-                    gap={["20px", "20px", 0]}
-                    wrap={["wrap", "wrap", "nowrap"]}
-                  >
+                  <Flex width="100%" justify="center" gap="20px" wrap="wrap">
                     <CustomIcons
                       icon={FaReact}
                       color="#00D8FF"
                       iconName="React"
                     />
-                    <CustomIcons
-                      icon={Git}
-                      iconName="Git"
-                      leftMargin={[0, 0, "1rem"]}
-                    />
-                    <CustomIcons
-                      boxSize={20}
-                      icon={NodeJS}
-                      iconName="NodeJs"
-                      margin={[0, 0, "1rem"]}
-                    />
+                    <CustomIcons icon={Git} iconName="Git" />
+                    <CustomIcons boxSize={20} icon={NodeJS} iconName="NodeJs" />
                     <CustomIcons
                       boxSize={12}
                       icon={TypeScript}
                       iconName="TypeScript"
                     />
-                  </Flex>
-                  <Flex
-                    width="100%"
-                    justify="center"
-                    gap={["20px", "20px", 0]}
-                    wrap={["wrap", "wrap", "nowrap"]}
-                  >
                     <CustomIcons icon={Javascript} iconName="Javascript" />
-                    <CustomIcons
-                      icon={Ruby}
-                      iconName="Ruby"
-                      margin={[0, 0, "1rem"]}
-                    />
+                    <CustomIcons icon={Ruby} iconName="Ruby" />
                     <CustomIcons
                       icon={RubyOnRails}
                       iconName="Ruby on Rails"
                       boxSize={24}
                     />
-                  </Flex>
-
-                  <Flex justify="center" rowGap="16px">
                     <CustomIcons
                       icon={Html}
                       iconName="HTML"
                       rightMargin="8px"
                     />
-                    <CustomIcons icon={Css} iconName="CSS" leftMargin="8px" />
+                    <CustomIcons icon={Css} iconName="CSS" />
                   </Flex>
                 </Flex>
               </Box>

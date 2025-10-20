@@ -7,11 +7,21 @@ const Main = () => {
   return (
     <main>
       <Stack mt="12rem" px={[0, 0]}>
-        <Home />
-        <About />
-        <Experience />
-        <Portfolio />
-        <Contact />
+        <section id="home">
+          <Home />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
+        <section id="portfolio">
+          <Portfolio />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
         <ScrollToTop
           width="40"
           color="white"

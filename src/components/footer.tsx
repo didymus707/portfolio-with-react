@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 export const Footer = () => (
-  <Box bg="#282929" py="4rem" >
+  <Box bg="#282929" py="1rem" pb='2rem' >
     <Container maxW="1200px">
       <Box ml="1rem">
         <Flex justify="center" align="center" mt="2rem">

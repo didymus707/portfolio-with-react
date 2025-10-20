@@ -1,16 +1,12 @@
-import { Box, Button, Container, Flex, Image } from "@chakra-ui/react";
-import React from "react";
 import { BodyText, Subtitle } from "../custom/icons";
+import { Box, Button, Container, Flex, Image } from "@chakra-ui/react";
 
 export const Home = () => (
-  <Box
-    bg="#282929"
-    boxShadow={["-19px 28px 18px -39px #000", "0 6px 10px -10px black"]}
-  >
+  <Box bg="#282929">
     <Container maxW="1200px">
       <Flex
-        mb="6rem"
         width="100%"
+        maxH={["64vh", null]}
         rowGap="2rem"
         align="center"
         justify="center"
@@ -19,6 +15,8 @@ export const Home = () => (
         wrap={["wrap", "nowrap"]}
       >
         <Box
+          pos={["relative", "static"]}
+          top={["-8rem", "0"]}
           width={["100%", "24%"]}
           style={{
             backgroundImage: `url("https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg")`,
@@ -34,7 +32,12 @@ export const Home = () => (
             alt="Adewale Orotayo"
           />
         </Box>
-        <Box width={["100%", "51%"]} order={[-1, 0]} ml={["0", "3rem"]}>
+        <Box
+          width={["100%", "51%"]}
+          ml={["0", "3rem"]}
+          pos={["relative"]}
+          top={["-16rem", "0"]}
+        >
           <Subtitle fontSize={["3xl", "4xl"]}>
             I'm{" "}
             <Box
@@ -50,9 +53,8 @@ export const Home = () => (
           <Button
             as="a"
             color="white"
-            target="_blank"
             variant="outline"
-            marginTop="1.5rem"
+            my="1.5rem"
             href="mailto:didymus7007@gmail.com"
             _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
           >

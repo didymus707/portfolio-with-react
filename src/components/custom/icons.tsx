@@ -30,7 +30,7 @@ const CustomIcons = (props: IconsProps) => {
       marginX={margin}
       marginLeft={leftMargin}
       marginRight={rightMargin}
-      width={["47%", "45%", "23%"]}
+      width={["45%", "45%", "25%"]}
     >
       <Icon as={icon} boxSize={16} flexBasis="50%" {...rest} />
       <BodyText fontSize="xl" textAlign="center">

@@ -8,7 +8,6 @@ import {
   Stack,
   VStack,
 } from "@chakra-ui/react";
-import React from "react";
 import { Badge } from "@chakra-ui/react";
 import { SmallSubtitle, BodyText, Heading2 } from "../custom/icons";
 
@@ -16,13 +15,8 @@ export const Portfolio = () => {
   return (
     <Box
       id="projects"
-      bg="#282929"
-      mt="12rem"
-      style={{
-        paddingTop: "6rem",
-        paddingBottom: "6rem",
-        background: "#2a2a29",
-      }}
+      bg="#353533"
+      py="4rem"
     >
       <Container maxW="1200px">
         <Heading2 color="white" textAlign="center">
@@ -31,15 +25,15 @@ export const Portfolio = () => {
         <VStack>
           <Flex
             wrap="wrap"
-            columnGap="0.5rem"
+            columnGap="1.2rem"
             justify="space-between"
-            style={{ marginTop: "3rem" }}
+            style={{ marginTop: "4rem" }}
           >
             <ProjectBox
               title="Whatsapp Clone"
               alt="whatsapp clone"
               status="in progress"
-              preview="#"
+              preview="https://whatsapp-clone-rho-lilac.vercel.app/"
               github="https://github.com/didymus707/whatsapp-clone"
               summary="This app is built with NextJs, NodeJs, Prisma and Tailwind"
               src="https://res.cloudinary.com/didymus/image/upload/v1705484981/Untitled_design_gpdo4t.gif"
