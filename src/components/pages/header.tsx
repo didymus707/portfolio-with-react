@@ -1,6 +1,5 @@
 import { Avatar, Box, Container, Flex } from "@chakra-ui/react";
 import { useRef } from "react";
-import { Link as ReactRouterLink } from "react-router-dom";
 import { Link as ChakraLink } from "@chakra-ui/react";
 import { SmallSubtitle } from "../custom/icons";
 
