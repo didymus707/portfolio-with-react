@@ -27,10 +27,10 @@ export const Header = () => {
       left="0"
       right="0"
       mb="2rem"
-      bg="#282929"
+      bg="#353533"
       zIndex={1000}
       position="fixed"
-      boxShadow="0 1px 10px -5px black"
+      boxShadow="0 2px 6px rgba(0, 0, 0, 0.3)"
     >
       <Container maxW="1200px">
         <nav>
@@ -44,9 +44,16 @@ export const Header = () => {
           >
             <ChakraLink
               ref={ref}
+              role="group"
               onClick={() => {
                 scrollToSection("home");
                 handleScrollToTop();
+              }}
+              textDecor="none"
+              _hover={{
+                cursor: "pointer",
+                transform: "translateY(-2px)",
+                transition: "all 0.3s ease-in-out",
               }}
             >
               <Flex
@@ -58,6 +65,10 @@ export const Header = () => {
                   bgGradient="linear(to-r, slateblue, coral)"
                   name="Adewale Orotayo"
                   size="md"
+                  _groupHover={{
+                    boxShadow: "0 0 12px slateblue",
+                    transition: "all 0.3s ease-in-out",
+                  }}
                 />
                 <SmallSubtitle
                   as="h1"
@@ -65,6 +76,10 @@ export const Header = () => {
                   bgClip="text"
                   rounded="3xl"
                   bgGradient="linear(to-r, slateblue, coral)"
+                  _groupHover={{
+                    textShadow: "0 0 8px coral",
+                    transition: "all 0.3s ease-in-out",
+                  }}
                 >
                   <span>Adewale</span> <br /> <span>Orotayo</span>
                 </SmallSubtitle>
