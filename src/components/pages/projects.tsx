@@ -8,7 +8,6 @@ import {
   Stack,
   VStack,
 } from "@chakra-ui/react";
-import React from "react";
 import { Badge } from "@chakra-ui/react";
 import { SmallSubtitle, BodyText, Heading2 } from "../custom/icons";
 
@@ -16,13 +15,8 @@ export const Portfolio = () => {
   return (
     <Box
       id="projects"
-      bg="#282929"
-      mt="4rem"
-      style={{
-        paddingTop: "0.4rem",
-        paddingBottom: "0.4rem",
-        background: "#2a2a29",
-      }}
+      bg="#353533"
+      py="4rem"
     >
       <Container maxW="1200px">
         <Heading2 color="white" textAlign="center">

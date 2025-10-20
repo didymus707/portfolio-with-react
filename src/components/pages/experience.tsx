@@ -2,8 +2,8 @@ import { Box, Container, Divider, Flex, Stack } from "@chakra-ui/react";
 import { BodyText, Heading2, Subtitle } from "../custom/icons";
 
 export const Experience = () => (
-  <Box bg="#353533" mt='4rem' mb='2rem'  py='4.5rem'>
-    <Container maxW='1200px' color="white">
+  <Box bg="#282929" mb="2rem" pt="4rem" pb='2rem'>
+    <Container maxW="1200px" color="white">
       <Heading2 py="2rem">Experience</Heading2>
       <Stack style={{ marginTop: "1.5rem", marginLeft: "1rem" }}>
         <Flex

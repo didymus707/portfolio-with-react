@@ -15,13 +15,13 @@ import CustomIcons, {
 
 export const About = () => {
   return (
-    <Box id="about" bg="#282929" mt="12rem">
+    <Box id="about" bg="#353533">
       <Container maxW="1200px">
         <Stack color="white" direction="column" className="about-classs">
-          <Box mt="4rem">
+          <Box mt="6rem">
             <Heading2 color="white">About</Heading2>
             <Stack ml="1rem">
-              <Flex align="baseline" my="2.5rem">
+              <Flex align="baseline" mt="4rem">
                 <Divider
                   width="5rem"
                   variant="solid"
@@ -47,12 +47,12 @@ export const About = () => {
                 </Box>
               </Flex>
 
-              <Box className="skills" style={{ margin: "4rem 0" }}>
+              <Box className="skills" style={{ margin: "4rem 0 6rem" }}>
                 <Heading2 textAlign="center">My Skills</Heading2>
                 <Flex
                   gap="30px"
                   width="100%"
-                  mt="3rem !important"
+                  mt="4rem !important"
                   flexDirection="column"
                 >
                   <Flex
