@@ -2,13 +2,11 @@ import { BodyText, Subtitle } from "../custom/icons";
 import { Box, Button, Container, Flex, Image } from "@chakra-ui/react";
 
 export const Home = () => (
-  <Box
-    bg="#282929"
-  >
+  <Box bg="#282929">
     <Container maxW="1200px">
       <Flex
-        mb="1rem"
         width="100%"
+        maxH={["80vh", null]}
         rowGap="2rem"
         align="center"
         justify="center"
@@ -17,6 +15,8 @@ export const Home = () => (
         wrap={["wrap", "nowrap"]}
       >
         <Box
+          pos={["relative", "static"]}
+          top={["-9rem", "0"]}
           width={["100%", "24%"]}
           style={{
             backgroundImage: `url("https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg")`,
@@ -32,7 +32,12 @@ export const Home = () => (
             alt="Adewale Orotayo"
           />
         </Box>
-        <Box width={["100%", "51%"]}  ml={["0", "3rem"]}>
+        <Box
+          width={["100%", "51%"]}
+          ml={["0", "3rem"]}
+          pos={["relative"]}
+          top={["-16rem", "0"]}
+        >
           <Subtitle fontSize={["3xl", "4xl"]}>
             I'm{" "}
             <Box
@@ -49,7 +54,7 @@ export const Home = () => (
             as="a"
             color="white"
             variant="outline"
-            marginTop="1.5rem"
+            my="1.5rem"
             href="mailto:didymus7007@gmail.com"
             _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
           >
