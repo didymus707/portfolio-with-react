@@ -55,60 +55,32 @@ export const About = () => {
                   mt="4rem !important"
                   flexDirection="column"
                 >
-                  <Flex
-                    width="100%"
-                    justify="center"
-                    gap={["20px", "20px", 0]}
-                    wrap={["wrap", "wrap", "nowrap"]}
-                  >
+                  <Flex width="100%" justify="center" gap="20px" wrap="wrap">
                     <CustomIcons
                       icon={FaReact}
                       color="#00D8FF"
                       iconName="React"
                     />
-                    <CustomIcons
-                      icon={Git}
-                      iconName="Git"
-                      leftMargin={[0, 0, "1rem"]}
-                    />
-                    <CustomIcons
-                      boxSize={20}
-                      icon={NodeJS}
-                      iconName="NodeJs"
-                      margin={[0, 0, "1rem"]}
-                    />
+                    <CustomIcons icon={Git} iconName="Git" />
+                    <CustomIcons boxSize={20} icon={NodeJS} iconName="NodeJs" />
                     <CustomIcons
                       boxSize={12}
                       icon={TypeScript}
                       iconName="TypeScript"
                     />
-                  </Flex>
-                  <Flex
-                    width="100%"
-                    justify="center"
-                    gap={["20px", "20px", 0]}
-                    wrap={["wrap", "wrap", "nowrap"]}
-                  >
                     <CustomIcons icon={Javascript} iconName="Javascript" />
-                    <CustomIcons
-                      icon={Ruby}
-                      iconName="Ruby"
-                      margin={[0, 0, "1rem"]}
-                    />
+                    <CustomIcons icon={Ruby} iconName="Ruby" />
                     <CustomIcons
                       icon={RubyOnRails}
                       iconName="Ruby on Rails"
                       boxSize={24}
                     />
-                  </Flex>
-
-                  <Flex justify="center" rowGap="16px">
                     <CustomIcons
                       icon={Html}
                       iconName="HTML"
                       rightMargin="8px"
                     />
-                    <CustomIcons icon={Css} iconName="CSS" leftMargin="8px" />
+                    <CustomIcons icon={Css} iconName="CSS" />
                   </Flex>
                 </Flex>
               </Box>
