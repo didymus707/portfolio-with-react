@@ -6,7 +6,7 @@ export const Home = () => (
     <Container maxW="1200px">
       <Flex
         width="100%"
-        maxH={["80vh", null]}
+        maxH={["64vh", null]}
         rowGap="2rem"
         align="center"
         justify="center"
@@ -16,7 +16,7 @@ export const Home = () => (
       >
         <Box
           pos={["relative", "static"]}
-          top={["-9rem", "0"]}
+          top={["-8rem", "0"]}
           width={["100%", "24%"]}
           style={{
             backgroundImage: `url("https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg")`,
