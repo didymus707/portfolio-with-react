@@ -13,11 +13,7 @@ import { SmallSubtitle, BodyText, Heading2 } from "../custom/icons";
 
 export const Portfolio = () => {
   return (
-    <Box
-      id="projects"
-      bg="#353533"
-      py="4rem"
-    >
+    <Box id="projects" bg="#353533" py="4rem">
       <Container maxW="1200px">
         <Heading2 color="white" textAlign="center">
           Portfolio
@@ -30,6 +26,15 @@ export const Portfolio = () => {
             style={{ marginTop: "4rem" }}
           >
             <ProjectBox
+              title="BlocTi"
+              alt="blocti"
+              status="in progress"
+              preview="#"
+              github="https://github.com/didymus707/Time-Block-Timer-React-TS-"
+              summary="This App is built with React, TypeScript and Tailwind and implements React Router v6 for routing"
+              src="https://res.cloudinary.com/didymus/video/upload/v1765588355/6d7ac90a-a57d-4cb1-9940-e62c1f9e2a0d_d8nttu.gif"
+            />
+            <ProjectBox
               title="Whatsapp Clone"
               alt="whatsapp clone"
               status="in progress"
@@ -37,15 +42,6 @@ export const Portfolio = () => {
               github="https://github.com/didymus707/whatsapp-clone"
               summary="This app is built with NextJs, NodeJs, Prisma and Tailwind"
               src="https://res.cloudinary.com/didymus/image/upload/v1705484981/Untitled_design_gpdo4t.gif"
-            />
-            <ProjectBox
-              title="Todo App"
-              alt="todo app"
-              status="in progress"
-              preview="https://targit.netlify.app"
-              github="https://github.com/didymus707/todo-app"
-              summary="This Todo App is built with React, TypeScript and Tailwind and implements React Router v6 for routing"
-              src="https://res.cloudinary.com/didymus/image/upload/v1705397073/todo_jk9x3x.png"
             />
             <ProjectBox
               title="Card Page"
