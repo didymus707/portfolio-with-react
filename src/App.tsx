@@ -6,7 +6,7 @@ import Main from "./components/main";
 
 const App = () => (
   <ChakraProvider theme={theme}>
-    <Box bg="#282929" pb="20px" overflow="hidden">
+    <Box bg="#282929" pb="20px">
       <Header />
       <Main />
       <Footer />
