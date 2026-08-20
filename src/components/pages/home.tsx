@@ -1,44 +1,38 @@
 import { BodyText, Subtitle } from "../custom/icons";
-import { Box, Button, Container, Flex, Image } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Image, Stack } from "@chakra-ui/react";
 
 export const Home = () => (
-  <Box bg="#282929">
+  <Box bg="#282929" pt={["2rem", "3rem"]} pb={["3rem", "4rem"]}>
     <Container maxW="1200px">
       <Flex
         width="100%"
-        maxH={["64vh", null]}
-        rowGap="2rem"
+        gap={["2rem", "2rem", "3rem"]}
         align="center"
-        justify="center"
-        px={["1rem", null]}
         color="whiteAlpha.800"
-        wrap={["wrap", "nowrap"]}
+        direction={["column", "column", "row"]}
       >
         <Box
-          pos={["relative", "static"]}
-          top={["-8rem", "0"]}
-          width={["100%", "24%"]}
-          style={{
-            backgroundImage: `url("https://res.cloudinary.com/didymus/image/upload/v1681945503/Untitled-1_j3cumc.jpg")`,
-          }}
+          flexShrink={0}
+          width={["220px", "260px", "30%"]}
+          maxW="320px"
+          order={[1, 1, 2]}
         >
           <Image
             width="100%"
-            boxSize="550px"
-            objectFit="cover"
-            objectPosition="bottom"
+            height="auto"
+            objectFit="contain"
             src="https://res.cloudinary.com/didymus/image/upload/e_background_removal/b_rgb:282929/c_pad,w_800,h_1422,ar_9:16,f_png/v1716467018/me_e5nfkj.jpg"
-            // src="https://res.cloudinary.com/didymus/image/upload/v1681945504/Untitled-2_nwudfq.jpg"
             alt="Adewale Orotayo"
           />
         </Box>
-        <Box
-          width={["100%", "51%"]}
-          ml={["0", "3rem"]}
-          pos={["relative"]}
-          top={["-16rem", "0"]}
+
+        <Stack
+          spacing="1rem"
+          order={[2, 2, 1]}
+          flex="1"
+          textAlign={["center", "center", "left"]}
         >
-          <Subtitle fontSize={["3xl", "4xl"]}>
+          <Subtitle fontSize={["3xl", "4xl", "5xl"]}>
             I'm{" "}
             <Box
               as="span"
@@ -49,42 +43,41 @@ export const Home = () => (
             </Box>
             ,
           </Subtitle>
-          <BodyText fontSize="2xl">Front End developer</BodyText>
-          <Button
-            as="a"
-            color="white"
-            variant="outline"
-            my="1.5rem"
-            href="mailto:didymus7007@gmail.com"
-            _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
+          <BodyText fontSize={["xl", "2xl"]} color="whiteAlpha.900">
+            Frontend Engineer - React · TypeScript · React Native
+          </BodyText>
+          <BodyText fontSize={["md", "lg"]} color="whiteAlpha.700" maxW="560px">
+            I build data-heavy interfaces and ship products end to end, from the
+            Supabase data layer through to the UI.
+          </BodyText>
+          <Flex
+            gap="1rem"
+            wrap="wrap"
+            pt="0.5rem"
+            justify={["center", "center", "flex-start"]}
           >
-            Contact Me
-          </Button>
-          {/* <Flex>
             <Button
               as="a"
               color="white"
-              target="_blank"
               variant="outline"
-              marginTop="1.5rem"
               href="mailto:didymus7007@gmail.com"
-              _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
+              _hover={{ bgGradient: "linear(to-r, slateblue, coral" }}
             >
-              Contact Me
+              Contact me
             </Button>
             <Button
               as="a"
               color="white"
-              target="_blank"
               variant="outline"
-              marginTop="1.5rem"
-              onClick={() => window.print()}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/didymus707"
               _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
             >
-              Download CV
+              View GitHub
             </Button>
-          </Flex> */}
-        </Box>
+          </Flex>
+        </Stack>
       </Flex>
     </Container>
   </Box>
