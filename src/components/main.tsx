@@ -6,7 +6,7 @@ import { Home, About, Portfolio, Experience } from "./pages";
 const Main = () => {
   return (
     <main>
-      <Stack mt="12rem" px={[0, 0]}>
+      <Stack spacing="0" pt={["7rem", "7rem", "8rem"]}>
         <section id="home">
           <Home />
         </section>

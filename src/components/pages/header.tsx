@@ -35,7 +35,7 @@ export const Header = () => {
       <Container maxW="1200px">
         <nav>
           <Flex
-            py="2rem"
+            py={["1rem", "1rem", "1.5rem"]}
             wrap="wrap"
             width="100%"
             color="white"
@@ -77,7 +77,7 @@ export const Header = () => {
                   rounded="3xl"
                   bgGradient="linear(to-r, slateblue, coral)"
                   _groupHover={{
-                    textShadow: "0 0 8px coral",
+                    textShadow: "0 0 12px slateblue",
                     transition: "all 0.3s ease-in-out",
                   }}
                 >
@@ -87,7 +87,7 @@ export const Header = () => {
             </ChakraLink>
             <Flex
               ml="auto"
-              mt={[4, 4, 0]}
+              mt={[3, 3, 0]}
               order={[3, 3, 1]}
               className="others"
               width={["100%", "100%", "42%"]}
