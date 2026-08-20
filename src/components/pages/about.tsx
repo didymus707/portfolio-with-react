@@ -7,7 +7,6 @@ import CustomIcons, {
   Ruby,
   NodeJS,
   TypeScript,
-  RubyOnRails,
   Heading2,
   Javascript,
   BodyText,
