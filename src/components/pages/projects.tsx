@@ -206,7 +206,7 @@ const ProjectCard = (project: Project) => {
         {summary}
       </BodyText>
 
-      <HStack wrap="wrap" spacing="0.4rem">
+      <HStack wrap="wrap" alignItems='baseline' spacing="0.4rem">
         {stack.map((tech) => (
           <Tag
             key={tech}
