@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Flex, Stack } from "@chakra-ui/react";
+import { Box, Container, Flex, Stack, Divider } from "@chakra-ui/react";
 import { BodyText, Heading2, Subtitle } from "../custom/icons";
 
 type Role = {
@@ -47,8 +47,8 @@ const roles: Role[] = [
 ];
 
 export const Experience = () => (
-  <Box bg="#282929" pt="4rem" pb="3rem">
-    <Container maxW="1200px" color="white">
+  <Box bg="bg.page" pt="4rem" pb="3rem">
+    <Container maxW="1200px" color="text.primary">
       <Heading2 py="1rem">Experience</Heading2>
       <Stack mt="2rem" ml={["0", "1rem"]} spacing="2.5rem">
         {roles.map((role) => (
@@ -59,8 +59,9 @@ export const Experience = () => (
               variant="solid"
               borderRadius="3xl"
               flexShrink={0}
-              border="4px solid transparent"
-              background="linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, slateblue, coral) border-box"
+              border="none"
+              height="3px"
+              bg="accent.solid"
             />
             <Box flex="1">
               <Flex
@@ -77,13 +78,13 @@ export const Experience = () => (
                   fontWeight="bold"
                   fontSize="sm"
                   whiteSpace="nowrap"
-                  color="whiteAlpha.700"
+                  color="text.muted"
                 >
                   {role.period}
                 </BodyText>
               </Flex>
               {role.detail && (
-                <BodyText mt="0.5rem" color="whiteAlpha.800" fontSize="md">
+                <BodyText mt="0.5rem" color="text.secondary" fontSize="md">
                   {role.detail}
                 </BodyText>
               )}

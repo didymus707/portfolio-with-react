@@ -3,16 +3,20 @@ import {
   Button,
   Container,
   Flex,
-  HStack,
   Image,
-  SimpleGrid,
   Stack,
+  Badge,
+  SimpleGrid,
   Tag,
   TagLabel,
+  HStack,
 } from "@chakra-ui/react";
-import { Badge } from "@chakra-ui/react";
 import { SmallSubtitle, BodyText, Heading2 } from "../custom/icons";
 
+/**
+ * ⚠️ TODO (Adewale): replace the placeholder links below with real URLs.
+ * Anything left as "" simply hides that button — no broken links.
+ */
 type Project = {
   title: string;
   alt: string;
@@ -26,6 +30,18 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    title: "Muse & Stitch",
+    alt: "Muse & Stitch AI virtual try-on for made-to-order fashion",
+    status: "Live",
+    featured: true,
+    summary:
+      "AI virtual try-on for a small West African fashion importer. Customers upload a photo and see garments rendered on their own body before committing to an order, then reserve in-stock pieces or pre-commit to made-to-order designs. Built and shipped in a one-week hackathon window, integrating YouCam's AI Clothes v4 API with async task creation and result polling.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "YouCam API"],
+    preview: "https://museandstitch.vercel.app/",
+    github: "https://github.com/didymus707/museandstitch",
+    src: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/116/559/datas/medium.jpg",
+  },
   {
     title: "stoQr",
     alt: "stoQr household inventory and budget tracking app",
@@ -112,7 +128,7 @@ export const Portfolio = () => {
   const earlier = projects.filter((p) => !p.featured);
 
   return (
-    <Box id="projects" bg="#bg.band" py={["3rem", "4rem"]}>
+    <Box id="projects" bg="bg.band" py={["3rem", "4rem"]}>
       <Container maxW="1200px">
         <Heading2 color="text.primary" textAlign="center">
           Projects
@@ -129,14 +145,14 @@ export const Portfolio = () => {
           through to shipped interface.
         </BodyText>
 
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing="1.5rem" mt="3rem">
+        <SimpleGrid columns={[1, 1, 2, 2]} spacing="1.5rem" mt="3rem">
           {featured.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
         </SimpleGrid>
 
         <Heading2
-          color="white"
+          color="text.primary"
           fontSize={["xl", "2xl"]}
           mt="4rem"
           textAlign="center"
@@ -172,7 +188,7 @@ const ProjectCard = (project: Project) => {
         height="160px"
         rounded="lg"
         overflow="hidden"
-        bgGradient="linear(to-br, slateblue, coral)"
+        bg="ink.line"
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -187,11 +203,11 @@ const ProjectCard = (project: Project) => {
           />
         ) : (
           <BodyText
-            fontSize="sm"
             fontFamily="mono"
-            color="text.muted"
+            fontSize="sm"
             letterSpacing="0.12em"
             textTransform="uppercase"
+            color="text.muted"
           >
             {title}
           </BodyText>
@@ -199,12 +215,12 @@ const ProjectCard = (project: Project) => {
       </Box>
 
       <Flex justify="space-between" align="center" gap="0.5rem">
-        <SmallSubtitle color="white">{title}</SmallSubtitle>
+        <SmallSubtitle color="text.primary">{title}</SmallSubtitle>
         {status && (
           <Badge
-            whiteSpace="nowrap"
             bg={statusStyle[status]?.bg}
             color={statusStyle[status]?.color}
+            whiteSpace="nowrap"
           >
             {status}
           </Badge>
@@ -236,13 +252,13 @@ const ProjectCard = (project: Project) => {
             as="a"
             flex="1"
             size="sm"
+            color="text.primary"
+            rounded="button"
             href={preview}
             target="_blank"
-            rounded="button"
+            rel="noopener noreferrer"
             variant="outline"
             fontSize="0.75rem"
-            color="text.primary"
-            rel="noopener noreferrer"
           >
             Live Preview
           </Button>
@@ -253,12 +269,12 @@ const ProjectCard = (project: Project) => {
             flex="1"
             size="sm"
             href={github}
-            target="_blank"
+            color="text.primary"
             rounded="button"
+            target="_blank"
+            rel="noopener noreferrer"
             variant="outline"
             fontSize="0.75rem"
-            color="text.primary"
-            rel="noopener noreferrer"
           >
             View Code
           </Button>
@@ -267,9 +283,3 @@ const ProjectCard = (project: Project) => {
     </Stack>
   );
 };
-
-// home
-// ##060605
-// #20201b
-// #2a2a29 fc
-// #474746

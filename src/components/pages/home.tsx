@@ -45,7 +45,7 @@ export const Home = () => (
           <BodyText fontSize={["xl", "2xl"]} color="text.primary">
             Frontend Engineer - React · TypeScript · React Native
           </BodyText>
-          <BodyText fontSize={["md", "lg"]} color="text.muted" maxW="560px">
+          <BodyText fontSize={["md", "lg"]} color="text.secondary" maxW="560px">
             I build data-heavy interfaces and ship products end to end, from the
             Supabase data layer through to the UI.
           </BodyText>
@@ -70,7 +70,6 @@ export const Home = () => (
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/didymus707"
-              _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
             >
               View GitHub
             </Button>
