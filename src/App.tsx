@@ -1,8 +1,10 @@
 import React from "react";
 import { Footer } from "./components/footer";
-import { Box, ChakraProvider, theme } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
 import { Header } from "./components/pages";
 import Main from "./components/main";
+import theme from "./components/theme";
+
 
 const App = () => (
   <ChakraProvider theme={theme}>
