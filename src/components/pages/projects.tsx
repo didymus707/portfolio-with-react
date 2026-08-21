@@ -13,10 +13,6 @@ import {
 } from "@chakra-ui/react";
 import { SmallSubtitle, BodyText, Heading2 } from "../custom/icons";
 
-/**
- * ⚠️ TODO (Adewale): replace the placeholder links below with real URLs.
- * Anything left as "" simply hides that button — no broken links.
- */
 type Project = {
   title: string;
   alt: string;
@@ -57,7 +53,7 @@ const projects: Project[] = [
       "Supabase",
     ],
     preview: "", // TODO: Play Store / beta signup / landing page
-    github: "", // TODO: repo URL if public
+    github: "https://github.com/didymus707/stoqr",
     src: "", // TODO: screenshot or GIF (Cloudinary)
   },
   {
@@ -69,7 +65,7 @@ const projects: Project[] = [
       "Queue management for hospital and clinic waiting rooms, built after an A&E visit where patients with hard-to-pronounce names were repeatedly passed over. Displays initials and queue numbers on any Smart TV browser — no extra hardware. Display board live; staff console and auth in progress.",
     stack: ["React", "TypeScript", "Supabase"],
     preview: "", // TODO: live display board URL
-    github: "", // TODO: repo URL if public
+    github: "https://github.com/didymus707/er-queue-display",
     src: "",
   },
   {
