@@ -6,65 +6,56 @@ const config: ThemeConfig = {
 };
 
 /**
- * Design tokens.
- * Neutrals share a single blue-grey hue family so sections read as one system.
- * Accent is used solid; the gradient is reserved for the hero name only.
+ * Design tokens — Notion-inspired.
+ * Surfaces are warm-neutral and closely spaced; separation comes from
+ * hairline borders and whitespace rather than value jumps.
+ * Text and borders use alpha so they layer instead of stacking as slabs.
  */
 const colors = {
-  ink: {
-    page: "#0B0D10",
-    band: "#12151A",
-    card: "#1A1E25",
-    line: "#262B34",
-    lineStrong: "#39404C",
+  surface: {
+    page: "#191919",
+    band: "#1E1E1E",
+    card: "#242424",
+    hover: "#2F2F2F",
   },
-  content: {
-    primary: "#E6E9EE",
-    secondary: "#B3BAC6",
-    muted: "#8B94A3",
+  // Notion's muted accent family
+  hue: {
+    blue: "#529CCA",
+    green: "#4DAB9A",
+    orange: "#FFA344",
+    purple: "#9A6DD7",
   },
-  accent: {
-    50: "#EEF1FF",
-    100: "#D6DEFF",
-    200: "#B4C2FF",
-    300: "#8FA5FF",
-    400: "#6E8BFF",
-    500: "#5A76F0",
-    600: "#4B63C7",
-    700: "#3C4E9E",
-    800: "#2C3A75",
-    900: "#1D264D",
-  },
-  status: {
-    live: "#3FBF8F",
-    building: "#E0A458",
-    shelved: "#7A8393",
-  },
-};
-
-const fonts = {
-  heading: `'Archivo', system-ui, -apple-system, sans-serif`,
-  body: `'IBM Plex Sans', system-ui, -apple-system, sans-serif`,
-  mono: `'IBM Plex Mono', ui-monospace, monospace`,
-};
-
-const radii = {
-  button: "8px",
-  card: "12px",
 };
 
 const semanticTokens = {
   colors: {
-    "bg.page": "ink.page",
-    "bg.band": "ink.band",
-    "bg.card": "ink.card",
-    "border.subtle": "ink.line",
-    "border.strong": "ink.lineStrong",
-    "text.primary": "content.primary",
-    "text.secondary": "content.secondary",
-    "text.muted": "content.muted",
-    "accent.solid": "accent.400",
+    "bg.page": "surface.page",
+    "bg.band": "surface.band",
+    "bg.card": "surface.card",
+    "bg.hover": "surface.hover",
+    "bg.chip": "rgba(255,255,255,0.055)",
+
+    "border.subtle": "rgba(255,255,255,0.094)",
+    "border.strong": "rgba(255,255,255,0.18)",
+
+    "text.primary": "rgba(255,255,255,0.88)",
+    "text.secondary": "rgba(255,255,255,0.56)",
+    "text.muted": "rgba(255,255,255,0.36)",
+
+    "accent.solid": "hue.blue",
   },
+};
+
+const fonts = {
+  heading: `'Inter Tight', Inter, system-ui, -apple-system, sans-serif`,
+  body: `Inter, system-ui, -apple-system, sans-serif`,
+  mono: `'IBM Plex Mono', ui-monospace, monospace`,
+};
+
+const radii = {
+  button: "6px",
+  card: "6px",
+  chip: "4px",
 };
 
 const styles = {
@@ -72,6 +63,8 @@ const styles = {
     "html, body": {
       bg: "bg.page",
       color: "text.primary",
+      fontFeatureSettings: `"cv02","cv03","cv04","cv11"`,
+      WebkitFontSmoothing: "antialiased",
     },
     "*:focus-visible": {
       outline: "2px solid",
@@ -92,8 +85,9 @@ const components = {
   Heading: {
     baseStyle: {
       fontFamily: "heading",
-      letterSpacing: "-0.02em",
+      letterSpacing: "-0.021em",
       fontWeight: 600,
+      color: "text.primary",
     },
   },
   Button: {
@@ -101,23 +95,21 @@ const components = {
     variants: {
       outline: {
         color: "text.primary",
-        borderColor: "border.strong",
-        _hover: {
-          bg: "accent.solid",
-          color: "ink.page",
-          borderColor: "accent.solid",
-        },
-        _active: { bg: "accent.500", color: "ink.page" },
+        borderColor: "border.subtle",
+        bg: "transparent",
+        _hover: { bg: "bg.hover", borderColor: "border.strong" },
+        _active: { bg: "bg.hover" },
       },
     },
   },
   Tag: {
     baseStyle: {
       container: {
-        fontFamily: "mono",
-        fontSize: "11px",
-        letterSpacing: "0.06em",
-        textTransform: "uppercase",
+        bg: "bg.chip",
+        color: "text.secondary",
+        borderRadius: "chip",
+        fontSize: "12px",
+        fontWeight: 450,
       },
     },
   },
@@ -125,11 +117,11 @@ const components = {
     baseStyle: {
       fontFamily: "mono",
       fontSize: "10px",
-      letterSpacing: "0.08em",
+      letterSpacing: "0.06em",
       textTransform: "uppercase",
-      borderRadius: "6px",
-      px: "8px",
-      py: "3px",
+      borderRadius: "chip",
+      px: "6px",
+      py: "2px",
       fontWeight: 500,
     },
   },

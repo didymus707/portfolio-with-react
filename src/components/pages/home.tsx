@@ -2,13 +2,13 @@ import { BodyText, Subtitle } from "../custom/icons";
 import { Box, Button, Container, Flex, Image, Stack } from "@chakra-ui/react";
 
 export const Home = () => (
-  <Box bg="#282929" pt={["2rem", "3rem"]} pb={["3rem", "4rem"]}>
+  <Box bg="bg.page" pt={["2rem", "3rem"]} pb={["3rem", "4rem"]}>
     <Container maxW="1200px">
       <Flex
         width="100%"
         gap={["2rem", "2rem", "3rem"]}
         align="center"
-        color="whiteAlpha.800"
+        color="text.secondary"
         direction={["column", "column", "row"]}
       >
         <Box
@@ -37,16 +37,15 @@ export const Home = () => (
             <Box
               as="span"
               bgClip="text"
-              bgGradient="linear(to-r, slateblue, coral)"
+              bgGradient="linear(100deg, accent.300, accent.500)"
             >
               Adewale Orotayo
             </Box>
-            ,
           </Subtitle>
-          <BodyText fontSize={["xl", "2xl"]} color="whiteAlpha.900">
+          <BodyText fontSize={["xl", "2xl"]} color="text.primary">
             Frontend Engineer - React · TypeScript · React Native
           </BodyText>
-          <BodyText fontSize={["md", "lg"]} color="whiteAlpha.700" maxW="560px">
+          <BodyText fontSize={["md", "lg"]} color="text.secondary" maxW="560px">
             I build data-heavy interfaces and ship products end to end, from the
             Supabase data layer through to the UI.
           </BodyText>
@@ -58,21 +57,19 @@ export const Home = () => (
           >
             <Button
               as="a"
-              color="white"
+              color="text.primary"
               variant="outline"
               href="mailto:didymus7007@gmail.com"
-              _hover={{ bgGradient: "linear(to-r, slateblue, coral" }}
             >
               Contact me
             </Button>
             <Button
               as="a"
-              color="white"
+              color="text.primary"
               variant="outline"
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/didymus707"
-              _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
             >
               View GitHub
             </Button>
