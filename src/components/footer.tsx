@@ -9,19 +9,20 @@ import {
 } from "react-icons/fa";
 
 export const Footer = () => (
-  <Box bg="#282929" py="1rem" pb='2rem' >
+  <Box bg="bg.page" py="1rem" pb="2rem">
     <Container maxW="1200px">
       <Box ml="1rem">
         <Flex justify="center" align="center" mt="2rem">
           <Divider
             width="5rem"
+            border="none"
+            height="3px"
             variant="solid"
-            background="linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, slateblue, coral) border-box"
-            border="3px solid transparent"
             borderRadius="3xl"
+            background="accent.solid"
           />
           <Flex
-            color="white"
+            color="text.primary"
             justify="space-evenly"
             width={["100%", "55%", "25%"]}
           >
@@ -57,18 +58,19 @@ export const Footer = () => (
           </Flex>
           <Divider
             width="5rem"
+            border="none"
+            height="3px"
             variant="solid"
-            background="linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, slateblue, coral) border-box"
-            border="3px solid transparent"
             borderRadius="3xl"
+            background="accent.solid"
           />
         </Flex>
 
         <Flex mt="4rem" align="center" justify="center">
-          <Subtitle color="whiteAlpha.800" textAlign="center" mr="1rem">
+          <Subtitle color="text.secondary" textAlign="center" mr="1rem">
             Thanks
           </Subtitle>
-          <Icon as={FaSmile} color="white" boxSize={6} />
+          <Icon as={FaSmile} color="text.primary" boxSize={6} />
         </Flex>
       </Box>
     </Container>
