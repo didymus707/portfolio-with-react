@@ -100,12 +100,11 @@ const projects: Project[] = [
   },
 ];
 
-
-const statusColor: Record<string, string> = {
-  Live: "green",
-  "In beta": "purple",
-  "In progress": "orange",
-  Shelved: "gray",
+const statusStyle: Record<string, { bg: string; color: string }> = {
+  Live: { bg: "rgba(63,191,143,0.12)", color: "status.live" },
+  "In beta": { bg: "rgba(110,139,255,0.14)", color: "accent.300" },
+  "In progress": { bg: "rgba(224,164,88,0.12)", color: "status.building" },
+  Shelved: { bg: "rgba(122,131,147,0.14)", color: "status.shelved" },
 };
 
 export const Portfolio = () => {
@@ -113,16 +112,16 @@ export const Portfolio = () => {
   const earlier = projects.filter((p) => !p.featured);
 
   return (
-    <Box id="projects" bg="#353533" py={["3rem", "4rem"]}>
+    <Box id="projects" bg="#bg.band" py={["3rem", "4rem"]}>
       <Container maxW="1200px">
-        <Heading2 color="white" textAlign="center">
+        <Heading2 color="text.primary" textAlign="center">
           Projects
         </Heading2>
         <BodyText
           mt="1rem"
           fontSize="lg"
           textAlign="center"
-          color="whiteAlpha.700"
+          color="text.muted"
           maxW="640px"
           mx="auto"
         >
@@ -160,13 +159,13 @@ const ProjectCard = (project: Project) => {
   return (
     <Stack
       p="1.5rem"
-      rounded="2xl"
-      bg="#2D2E31"
+      rounded="card"
+      bg="bg.card"
       spacing="1rem"
       border="1px solid"
-      borderColor="whiteAlpha.300"
+      borderColor="border.subtle"
       transition="transform 0.2s ease, border-color 0.2s ease"
-      _hover={{ transform: "translateY(-4px)", borderColor: "whiteAlpha.600" }}
+      _hover={{ transform: "translateY(-4px)", borderColor: "border.strong" }}
     >
       <Box
         width="100%"
@@ -187,7 +186,13 @@ const ProjectCard = (project: Project) => {
             objectFit="cover"
           />
         ) : (
-          <BodyText fontSize="3xl" fontWeight="bold" color="white">
+          <BodyText
+            fontSize="sm"
+            fontFamily="mono"
+            color="text.muted"
+            letterSpacing="0.12em"
+            textTransform="uppercase"
+          >
             {title}
           </BodyText>
         )}
@@ -196,25 +201,29 @@ const ProjectCard = (project: Project) => {
       <Flex justify="space-between" align="center" gap="0.5rem">
         <SmallSubtitle color="white">{title}</SmallSubtitle>
         {status && (
-          <Badge colorScheme={statusColor[status] ?? "gray"} rounded="md">
+          <Badge
+            whiteSpace="nowrap"
+            bg={statusStyle[status]?.bg}
+            color={statusStyle[status]?.color}
+          >
             {status}
           </Badge>
         )}
       </Flex>
 
-      <BodyText color="whiteAlpha.800" fontSize="sm" flex="1">
+      <BodyText color="text.secondary" fontSize="sm" flex="1">
         {summary}
       </BodyText>
 
-      <HStack wrap="wrap" alignItems='baseline' spacing="0.4rem">
+      <HStack wrap="wrap" alignItems="baseline" spacing="0.4rem">
         {stack.map((tech) => (
           <Tag
             key={tech}
             size="sm"
             mb="0.4rem"
-            rounded="full"
-            variant="subtle"
-            colorScheme="purple"
+            rounded="6px"
+            bg="ink.line"
+            color="text.secondary"
           >
             <TagLabel>{tech}</TagLabel>
           </Tag>
@@ -227,14 +236,13 @@ const ProjectCard = (project: Project) => {
             as="a"
             flex="1"
             size="sm"
-            color="white"
-            rounded="3xl"
             href={preview}
             target="_blank"
-            rel="noopener noreferrer"
+            rounded="button"
             variant="outline"
             fontSize="0.75rem"
-            _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
+            color="text.primary"
+            rel="noopener noreferrer"
           >
             Live Preview
           </Button>
@@ -245,13 +253,12 @@ const ProjectCard = (project: Project) => {
             flex="1"
             size="sm"
             href={github}
-            color="white"
-            rounded="3xl"
             target="_blank"
-            rel="noopener noreferrer"
+            rounded="button"
             variant="outline"
             fontSize="0.75rem"
-            _hover={{ bgGradient: "linear(to-r, slateblue, coral)" }}
+            color="text.primary"
+            rel="noopener noreferrer"
           >
             View Code
           </Button>
